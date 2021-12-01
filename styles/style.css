@@ -1,4 +1,5 @@
-.container {
-  background: url();
+div.container {
+  height: 50%;
+  background: red;
 }
 /*# sourceMappingURL=style.css.map */
