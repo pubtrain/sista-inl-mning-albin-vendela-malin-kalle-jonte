@@ -314,6 +314,7 @@ main .rolls .all-cards {
           align-items: center;
 }
 
+  -webkit-box-direction: normal;
 .main-container .ref .refpic {
   width: 100px;
   height: 100px;
