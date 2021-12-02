@@ -6,12 +6,15 @@
 @import "./objects";
 @import "./style-om-oss/";
 @import "./start";
+@import "./referenser";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 @mixin flex($direction, $justify, $align) {
   display: flex;
@@ -33,10 +36,11 @@
         width: 100%;
         background: rgba(99, 75, 75, 0.329);
         position: absolute;
+        z-index: 1;
     }
     .main-heading {
       color: white;
-      z-index: 1;
+      z-index: 2;
     }
   }
   .main-heading {
