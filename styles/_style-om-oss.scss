@@ -1,11 +1,24 @@
 .header {
   .header-container {
     .back-img {
+      @include flex(column, center, center);
+      width: 100%;
+      height: 100%;
       background-image: url(./../images/5733853.jpg);
       background-size: cover;
       background-position: center;
-      width: 100%;
-      height: 100%;
+      z-index: 0;
+    }
+  }
+}
+
+main {
+  @include flex(row, center, center);
+  .rolls {
+    font-size: 70%;
+    img {
+      width: 0.2px;
+      height: 100px;
     }
   }
 }

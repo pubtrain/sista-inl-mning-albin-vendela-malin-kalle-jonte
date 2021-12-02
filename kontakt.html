@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Kontakt</title>
 </head>
 <body>
-  <header>
-
+  <header class="header">
+    <div class="header-container">
+      <h1 class="main-heading">Kontakt</h1>
+      <div class="dark-opacity"></div>
+      <div class="contact-header-pic"></div>
+    </div>
   </header>
+  
   <main>
+
+
     <form name="contact-form"> 
-      <label for="name-input">Förnamnamn:</label><br>
+      <label for="name-input">Förnamn:</label><br>
       <input type="text" id="first-name-input" placeholder="Vendela" required><br>
       <label for="surname-input">Efternamn:</label><br>
       <input type="text" id="surname-input" placeholder="Swenson" required><br>
@@ -40,8 +47,33 @@
   </main>
 
 
-  <footer>
 
+  <footer class="footer">
+    <div class="social-media">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+    <nav class="footer-nav">
+      <h4>Nav länkar:</h4>
+      <ul>
+          <li>
+            <a href="index.html">Startsida</a>
+          </li>
+          <li>
+            <a href="object.html">Våra objekt</a>
+          </li>
+          <li>
+            <a href="index-om-oss.html">Om oss</a>
+          </li>
+          <li>
+            <a href="referenser.html">Referenser</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+      </ul>
+    </nav>
   </footer>
 </body>
 </html>
