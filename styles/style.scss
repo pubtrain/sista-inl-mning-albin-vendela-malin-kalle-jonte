@@ -51,7 +51,9 @@
     .social-media{
         width:20%;
         height: 20%;
-        background: red;
+        @include flex(row,space-around,center);
+        width: 25%;
+
         .box1,.box2,.box3{
             width: 30px;
             height: 30px;
@@ -60,7 +62,15 @@
     }
     
     .footer-nav{
-        @include flex(row,space-around,center);
-        
+        @include flex(column,space-around,center);
+        height: 80%;
+        ul{
+            height: 100%;
+            @include flex(column,space-around,center);
+            
+            li{
+list-style-type:none ;
+            }
+        }
     }
 }
