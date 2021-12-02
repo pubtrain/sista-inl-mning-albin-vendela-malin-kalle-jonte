@@ -5,6 +5,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
 .header .header-container .object-pic {
+<<<<<<< HEAD
+=======
   width: 100%;
   height: 100%;
   background-image: url(./../images/albins-bild.jpg);
@@ -14,12 +16,165 @@
   z-index: 0;
 }
 
+.object-main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.object-main .object-article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+}
+
+.object-main .object-article-container .object-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.object-main .object-article-container .object-card .object-img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+>>>>>>> 5b6846b22c3259a14d78f68b7cacc4c4d5d24776
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  background-image: url(/images/test-referensbild.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.object-main .object-article-container .object-card .object-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px 20px 20px 20px;
+  height: 50%;
+  width: 80%;
+}
+
+.object-main .object-article-container .object-card .details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header .header-container .back-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
   background-image: url(./../images/5733853.jpg);
   background-size: cover;
   background-position: center;
+  z-index: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .rolls {
+  font-size: 70%;
+}
+
+main .rolls img {
+  width: 0.2px;
+  height: 100px;
+}
+
+.header-ref {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
 }
 
 .header-ref {
@@ -39,6 +194,17 @@
   background-position: bottom;
   position: absolute;
   z-index: 0;
+=======
+  background-image: url(./../images/123456.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  z-index: 0;
+}
+
+.header-ref .ref-h1 {
+  color: #b90c4e;
+>>>>>>> 5b6846b22c3259a14d78f68b7cacc4c4d5d24776
 }
 
 * {
@@ -93,7 +259,7 @@
   width: 100%;
   height: 30vh;
   background: #a5a5a5;
-  position: fixed;
+  position: relative;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +293,9 @@
   width: 25%;
 }
 
-.footer .social-media .box1, .footer .social-media .box2, .footer .social-media .box3 {
+.footer .social-media .box1,
+.footer .social-media .box2,
+.footer .social-media .box3 {
   width: 30px;
   height: 30px;
   background: black;

@@ -3,8 +3,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
+@import "./variabler";
+@import "./mixins";
 @import "./objects";
-@import "./style-om-oss/";
+@import "./style-om-oss";
 @import "./start";
 @import "./referenser";
 @import "./kontakt";
@@ -15,15 +17,6 @@
   box-sizing: border-box;
 }
 
-
-
-@mixin flex($direction, $justify, $align) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-}
-
 .header {
   width: 100%;
   height: 50vh;
@@ -32,12 +25,12 @@
     height: 100%;
     @include flex(column, center, center);
     position: relative;
-    .dark-opacity{
-        height: 100%;
-        width: 100%;
-        background: rgba(99, 75, 75, 0.329);
-        position: absolute;
-        z-index: 1;
+    .dark-opacity {
+      height: 100%;
+      width: 100%;
+      background: rgba(99, 75, 75, 0.329);
+      position: absolute;
+      z-index: 1;
     }
     .main-heading {
       color: white;
@@ -50,36 +43,38 @@
   }
 }
 
-  .footer{
-    width: 100%;
-    height: 30vh;
-    background: rgb(165, 165, 165);
-    position: fixed;
-    bottom: 0;
-    @include flex(row,space-around,center);
-    .social-media{
-        width:20%;
-        height: 20%;
-        @include flex(row,space-around,center);
-        width: 25%;
+.footer {
+  width: 100%;
+  height: 30vh;
+  background: rgb(165, 165, 165);
+  position: relative;
+  bottom: 0;
+  @include flex(row, space-around, center);
+  .social-media {
+    width: 20%;
+    height: 20%;
+    @include flex(row, space-around, center);
+    width: 25%;
 
-        .box1,.box2,.box3{
-            width: 30px;
-            height: 30px;
-            background: black;
-        }
+    .box1,
+    .box2,
+    .box3 {
+      width: 30px;
+      height: 30px;
+      background: black;
     }
-    
-    .footer-nav{
-        @include flex(column,space-around,center);
-        height: 80%;
-        ul{
-            height: 100%;
-            @include flex(column,space-around,center);
-            
-            li{
-                list-style-type:none;
-            }
-        }
+  }
+
+  .footer-nav {
+    @include flex(column, space-around, center);
+    height: 80%;
+    ul {
+      height: 100%;
+      @include flex(column, space-around, center);
+
+      li {
+        list-style-type: none;
+      }
     }
+  }
 }
