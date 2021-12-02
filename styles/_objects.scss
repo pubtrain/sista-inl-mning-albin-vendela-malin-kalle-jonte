@@ -3,16 +3,11 @@
 .header{
     .header-container{
         .object-pic{
-        background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+        background-image: url(./../images/robert-bye-_4c7erArmdg-unsplash.jpg);
         background-size: cover;
         background-position: bottom;
         }
-        .dark-opacity{
-            height: 100%;
-            width: 100%;
-            background: rgba(99, 75, 75, 0.329);
-            position: absolute;
-        }
+        
     }
 }
 

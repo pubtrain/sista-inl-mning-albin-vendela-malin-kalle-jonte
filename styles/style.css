@@ -5,16 +5,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
 .header .header-container .object-pic {
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  background-image: url(./../images/robert-bye-_4c7erArmdg-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-}
-
-.header .header-container .dark-opacity {
-  height: 100%;
-  width: 100%;
-  background: rgba(99, 75, 75, 0.329);
-  position: absolute;
 }
 
 .back-img {
@@ -51,6 +44,13 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.header .header-container .dark-opacity {
+  height: 100%;
+  width: 100%;
+  background: rgba(99, 75, 75, 0.329);
+  position: absolute;
 }
 
 .header .header-container .main-heading {
