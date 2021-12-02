@@ -4,7 +4,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header .header-container .object-pic {
+.header-container {
+  background-image: url(/images/5733853.jpg);
+}
+
+.kalle {
+  color: green;
+  background: black;
+}
+
+.header .header-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+
+}
+  .header .header-container .object-pic {
   width: 100%;
   height: 100%;
   background-image: url(./../images/albins-bild.jpg);
@@ -121,7 +151,7 @@
           align-items: center;
 }
 
-.header .header-container .back-img {
+.back-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,15 +189,77 @@ main {
           align-items: center;
 }
 
+main .history-and-rolls .history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
 main .rolls {
-  font-size: 70%;
+  font-size: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .rolls img {
-  width: 0.2px;
-  height: 100px;
+main .rolls .card {
+  margin-left: 11%;
+  margin-bottom: 10%;
 }
 
+main .rolls .card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+}
+
+main .rolls .card img:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+main .rolls .all-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+<<<<<<< HEAD
 .header-ref {
   background-color: #c23357;
   background-image: url(./images/123456.jpeg);
@@ -175,15 +267,64 @@ main .rolls img {
 
 .header-ref .ref-h1 {
   color: aliceblue;
+=======
+.header .header-container .reference-img {
+>>>>>>> b6c1946da2c8af7bd1da9e7cba11b9bd4ad9bd26
   width: 100%;
   height: 100%;
   background-image: url(./../images/123456.jpeg);
   background-size: cover;
-  background-position: bottom;
-  position: absolute;
+  background-position: center;
   z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .ref {
+  width: 100%;
+  height: 100%;
+  background-color: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+<<<<<<< HEAD
 .header-ref .ref-h1 .ref-h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,13 +381,18 @@ main #contact-form {
 
 main #contact-form > * {
   padding: 3px;
+=======
+.main-container .ref .refpic {
+  width: 100px;
+  height: 100px;
+>>>>>>> b6c1946da2c8af7bd1da9e7cba11b9bd4ad9bd26
 }
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
@@ -261,14 +407,17 @@ main #contact-form > * {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
   position: relative;
 }
 
@@ -301,6 +450,22 @@ main #contact-form > * {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .footer-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-pack: distribute;
@@ -318,13 +483,13 @@ main #contact-form > * {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 25%;
 }
 
@@ -342,13 +507,13 @@ main #contact-form > * {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 80%;
 }
 
@@ -359,13 +524,13 @@ main #contact-form > * {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer .footer-nav ul li {
