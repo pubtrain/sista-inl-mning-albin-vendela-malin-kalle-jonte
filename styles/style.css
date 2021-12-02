@@ -4,40 +4,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header .header-container {
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
 
-.header .header-container .dark-opacity {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.329);
-  position: absolute;
-}
-
-.footer {
-  width: 100%;
-  height: 30vh;
-  background: #a5a5a5;
-  position: fixed;
-  bottom: 0;
-}
-
-.footer .footer-nav {
-  @in;
-}
-
-.header-container {
-  background-image: url(/images/5733853.jpg);
-}
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
@@ -52,14 +25,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
   position: relative;
 }
 
