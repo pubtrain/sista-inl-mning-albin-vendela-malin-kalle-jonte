@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Kontakt</title>
 </head>
 <body>
-  
+  <header>
+
+  </header>
+  <main>
+    <form name="contact-form"> 
+      <label for="name-input">Förnamnamn:</label><br>
+      <input type="text" id="first-name-input" placeholder="Vendela" required><br>
+      <label for="surname-input">Efternamn:</label><br>
+      <input type="text" id="surname-input" placeholder="Swenson" required><br>
+      <label for="e-mail">Email:</label><br>
+      <input type="text" id="e-mail" placeholder="vendela.swenson@gmail.com" required><br>
+
+      <label for="reason">Vad vill du kontakta oss angående?</label><br>
+      <select id="reason" >
+        <option value="" disabled selected hidden>Välj alternativ</option>
+        <option value="Köp av produkt/tjänst">Köp av produkt/tjänst</option>
+        <option value=" Frågor om företaget"> Frågor om företaget</option>
+        <option value="Synpunkter på webbplats">Synpunkter på webbplats</option>
+      </select>
+      <br>
+      <label for="form-textarea">Meddelande</label><br>
+      <textarea id="form-textarea" name="form-textarea" rows="6" cols="25" placeholder="Skriv ditt meddelande" required></textarea>
+      <br>
+      <input type="checkbox" id="subscribe" value="" checked>
+      <label for="subscribe">Prenumerera på nyhetsbrev</label>
+
+
+      <button type="submit" id="form-submit-button">Skicka</button>
+    </form>
+  </main>
+
+
+  <footer>
+
+  </footer>
 </body>
 </html>
