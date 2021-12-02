@@ -28,7 +28,12 @@
     height: 100%;
     @include flex(column, center, center);
     position: relative;
-
+    .dark-opacity{
+        height: 100%;
+        width: 100%;
+        background: rgba(99, 75, 75, 0.329);
+        position: absolute;
+    }
     .main-heading {
       color: white;
       z-index: 1;
