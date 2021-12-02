@@ -32,7 +32,9 @@
   background-size: cover;
   background-position: bottom;
   position: relative;
-.header .header-container .object-pic {
+
+}
+  .header .header-container .object-pic {
   width: 100%;
   height: 100%;
   background-image: url(./../images/albins-bild.jpg);
