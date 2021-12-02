@@ -8,11 +8,10 @@
 @import "./start";
 @import "./referenser";
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -24,25 +23,30 @@
   align-items: $align;
 }
 
-.header{
-    width: 100%;
-    height: 50vh;
-    
-    .header-container{
+.header {
+  width: 100%;
+  height: 50vh;
+
+  .header-container {
+    height: 100%;
+    @include flex(column, center, center);
+    position: relative;
+    .dark-opacity{
         height: 100%;
-        @include flex(column,center,center);
-        position: relative;
-        
-        .main-heading{
-            color: white;
-            z-index: 1;
-        }
+        width: 100%;
+        background: rgba(99, 75, 75, 0.329);
+        position: absolute;
     }
     .main-heading {
       color: white;
       z-index: 1;
     }
   }
+  .main-heading {
+    color: white;
+    z-index: 1;
+  }
+}
 
   .footer{
     width: 100%;
@@ -54,7 +58,9 @@
     .social-media{
         width:20%;
         height: 20%;
-        background: red;
+        @include flex(row,space-around,center);
+        width: 25%;
+
         .box1,.box2,.box3{
             width: 30px;
             height: 30px;
@@ -63,7 +69,15 @@
     }
     
     .footer-nav{
-        @include flex(row,space-around,center);
-        
+        @include flex(column,space-around,center);
+        height: 80%;
+        ul{
+            height: 100%;
+            @include flex(column,space-around,center);
+            
+            li{
+                list-style-type:none;
+            }
+        }
     }
 }
