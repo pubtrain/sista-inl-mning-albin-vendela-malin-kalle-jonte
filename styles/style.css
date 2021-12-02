@@ -5,9 +5,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
 .header .header-container .object-pic {
-  background-image: url(./../images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/albins-bild.jpg);
   background-size: cover;
   background-position: bottom;
+  position: absolute;
+  z-index: 0;
 }
 
 .header .header-container .back-img {
@@ -53,11 +57,12 @@
   width: 100%;
   background: rgba(99, 75, 75, 0.329);
   position: absolute;
+  z-index: 1;
 }
 
 .header .header-container .main-heading {
   color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header .main-heading {

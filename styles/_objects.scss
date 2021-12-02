@@ -3,9 +3,13 @@
 .header{
     .header-container{
         .object-pic{
-        background-image: url(./../images/robert-bye-_4c7erArmdg-unsplash.jpg);
+            width: 100%;
+            height: 100%;
+        background-image: url(./../images/albins-bild.jpg);
         background-size: cover;
         background-position: bottom;
+        position: absolute;
+        z-index: 0;
         }
         
     }
