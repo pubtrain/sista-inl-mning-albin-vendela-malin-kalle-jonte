@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,gBAAgB,EAAE,GAAG;CACtB",
+    "sources": [
+        "style-om-oss.scss"
+    ],
+    "names": [],
+    "file": "style-om-oss.css"
+}
