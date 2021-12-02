@@ -23,8 +23,8 @@
   background: black;
 }
 
-h1 {
-  background-color: red;
+.header-container {
+  background-image: url(/images/5733853.jpg);
 }
 
 * {
