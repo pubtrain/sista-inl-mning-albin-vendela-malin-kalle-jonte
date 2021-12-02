@@ -1,11 +1,9 @@
 .header-ref {
-<<<<<<< HEAD
-    // @include flex;
+     
     background-color: rgb(194, 51, 87);
     background-image: url(./images/123456.jpeg) ;
     .ref-h1 {
         color: aliceblue;
-=======
             width: 100%;
             height: 100%;
         background-image: url(./../images/123456.jpeg);
@@ -19,6 +17,6 @@
             @include flex(column, center, center);
             color:rgb(114, 145, 100);
         
->>>>>>> 5b6846b22c3259a14d78f68b7cacc4c4d5d24776
     }
+}
 }
