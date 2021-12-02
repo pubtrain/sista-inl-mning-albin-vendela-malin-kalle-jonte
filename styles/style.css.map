@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": ";AAAA;;;;EAIE",
+    "mappings": ";AAAA;;;;EAIE;AEJF,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,GAAG;CAChB",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "style-om-oss.scss",
+        "_start.scss"
     ],
     "names": [],
     "file": "style.css"
