@@ -43,6 +43,30 @@
   z-index: 0;
 }
 
+.object-main {
+  width: 100%;
+  height: 100vh;
+}
+
+.object-main .object-article-container {
+  width: 100%;
+  height: 100%;
+  background-color: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header .header-container .back-img {
   background-image: url(./../images/5733853.jpg);
   background-size: cover;
@@ -114,7 +138,7 @@
   width: 100%;
   height: 30vh;
   background: #a5a5a5;
-  position: fixed;
+  position: relative;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
