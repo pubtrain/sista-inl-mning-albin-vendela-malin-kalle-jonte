@@ -16,5 +16,9 @@ main {
   @include flex(row, center, center);
   .rolls {
     font-size: 70%;
+    img {
+      width: 0.2px;
+      height: 100px;
+    }
   }
 }
