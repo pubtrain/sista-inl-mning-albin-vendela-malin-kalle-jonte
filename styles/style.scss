@@ -5,6 +5,7 @@
 */
 @import "./objects";
 @import "./style-om-oss/";
+@import "./start";
 
 
 *{
@@ -14,10 +15,10 @@
 }
 
 @mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 .header{
@@ -34,4 +35,9 @@
             z-index: 1;
         }
     }
+    .main-heading {
+      color: white;
+      z-index: 1;
+    }
+  }
 }
