@@ -17,8 +17,10 @@
   position: absolute;
 }
 
-.header-container {
-  background-image: url(/images/5733853.jpg);
+.back-img {
+  background-image: url(./../images/5733853.jpg);
+  height: 100%;
+  width: 100%;
 }
 
 * {
@@ -87,7 +89,9 @@
   background: red;
 }
 
-.footer .social-media .box1, .footer .social-media .box2, .footer .social-media .box3 {
+.footer .social-media .box1,
+.footer .social-media .box2,
+.footer .social-media .box3 {
   width: 30px;
   height: 30px;
   background: black;
