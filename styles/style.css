@@ -36,17 +36,12 @@
   z-index: 0;
 }
 
-.back-img {
+.header .header-container .back-img {
   background-image: url(./../images/5733853.jpg);
-  height: 100%;
+  background-size: cover;
+  background-position: center;
   width: 100%;
 
-  background: rgba(99, 75, 75, 0.329);
-  position: absolute;
-}
-
-.header-container {
-  background-image: url(/images/5733853.jpg);
 }
 
 * {
