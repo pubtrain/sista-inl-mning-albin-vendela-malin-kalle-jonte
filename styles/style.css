@@ -32,6 +32,30 @@
   background-size: cover;
   background-position: bottom;
   position: relative;
+.header .header-container .object-pic {
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/albins-bild.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  z-index: 0;
+}
+
+.header .header-container .back-img {
+  background-image: url(./../images/5733853.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header-ref {
+  background-color: pink;
+}
+
+.header-ref .ref-h1 {
+  color: aliceblue;
 }
 
 * {
@@ -70,12 +94,98 @@
 .header .header-container .dark-opacity {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.329);
+  background: rgba(99, 75, 75, 0.329);
   position: absolute;
+  z-index: 1;
 }
 
 .header .header-container .main-heading {
   color: white;
+  z-index: 2;
+}
+
+.header .main-heading {
+  color: white;
   z-index: 1;
+}
+
+.footer {
+  width: 100%;
+  height: 30vh;
+  background: #a5a5a5;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .social-media {
+  width: 20%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.footer .social-media .box1, .footer .social-media .box2, .footer .social-media .box3 {
+  width: 30px;
+  height: 30px;
+  background: black;
+}
+
+.footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+}
+
+.footer .footer-nav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-nav ul li {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
