@@ -381,6 +381,10 @@
   height: auto;
 }
 
+.header .main-heading {
+  position: absolute;
+}
+
 .header .header-container .reference-img {
   width: 100%;
   height: 100%;
@@ -391,13 +395,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-=======
->>>>>>> bc575f6ce7db47abdd45d7ce97728ab427a9c528
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -753,9 +754,6 @@ main #contact-form > * {
   inset: 0 0 0 40%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: 10;
 }
 
 .header .nav-box .nav-text-container {

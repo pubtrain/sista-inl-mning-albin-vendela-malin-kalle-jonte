@@ -60,25 +60,7 @@
           background: black;
           transition: all 0.5s ease;
         }
-        &::before {
-          top: 25%;
-        }
-        &::after {
-          bottom: 25%;
-        }
-      }
-      &.activeBtn {
-        z-index: 9999;
 
-        .line1 {
-          background: transparent;
-          &::before {
-            transform: translateY(8.5px) rotate(45deg);
-          }
-
-          &::after {
-            transform: translateY(-8.5px) rotate(-45deg);
-          }
         }
       }
     }
@@ -94,21 +76,7 @@
     background: rgb(255, 255, 255);
     inset: 0 0 0 40%;
     transform: translateX(100%);
-    transition: all 0.5s ease;
-    z-index: 10;
-    .nav-text-container {
-      @include flex(column, space-around, flex-start);
-      height: 30%;
-      margin: 0 20%;
-      ul {
-        li {
-          list-style-type: none;
-          a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-            &.on-site {
-              color: rgb(148, 148, 148);
+
             }
           }
         }
