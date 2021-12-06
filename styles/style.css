@@ -4,37 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header-container {
-  background-image: url(/images/5733853.jpg);
-}
-
-.kalle {
-  color: green;
-  background: black;
-}
-
-.header .header-container {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-
-}
-  .header .header-container .object-pic {
+.header .header-container .object-pic {
   width: 100%;
   height: 100%;
   background-image: url(./../images/albins-bild.jpg);
@@ -259,6 +229,32 @@ main .rolls .all-cards {
   margin-top: 10%;
 }
 
+.kalle {
+  color: green;
+  background: black;
+}
+
+.header .header-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
 .header .header-container .reference-img {
   width: 100%;
   height: 100%;
@@ -277,9 +273,29 @@ main .rolls .all-cards {
           align-items: center;
 }
 
-.main-container {
-  width: 100%;
-  height: 100vh;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ref-title {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+}
+
+main .ref-estate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,28 +311,35 @@ main .rolls .all-cards {
           align-items: center;
 }
 
-.main-container .ref {
-  width: 100%;
-  height: 100%;
-  background-color: 0;
+main .ref-estate .ref-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
 }
 
-.main-container .ref .refpic {
-  width: 100px;
-  height: 100px;
+main .ref-estate .ref-object {
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 10%;
+}
+
+main .ref-estate .ref-object img {
+  height: 200px;
+  width: 100%;
+  border-radius: 2px;
 }
 
 * {
@@ -346,9 +369,6 @@ main .rolls .all-cards {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
   position: relative;
 }
 
