@@ -342,6 +342,17 @@ main .ref-estate .ref-object img {
   border-radius: 2px;
 }
 
+main .ref-estate .ref-object .ref-object-sold {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  color: rgba(255, 0, 0, 0.541);
+  position: absolute;
+  padding-left: 105%;
+  padding-bottom: 90%;
+  font-size: 2.0rem;
+  letter-spacing: 10px;
+}
+
 .header .header-container .contact-header-pic {
   display: -webkit-box;
   display: -ms-flexbox;
