@@ -18,6 +18,10 @@
   z-index: 0;
 }
 
+body {
+  background: rgba(252, 213, 142, 0.253);
+}
+
 .object-main {
   height: 100%;
   display: -webkit-box;
@@ -56,9 +60,13 @@
   width: 100%;
   height: 350px;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 5px 5px 0 0;
   margin: 15px 0;
   position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background: white;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +103,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .object-main .object-article-container .object-card .object-img img {
@@ -140,6 +148,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.object-main .object-article-container .object-card:hover {
+  -webkit-transform: scale(103%);
+          transform: scale(103%);
+}
+
+@media screen and (min-width: 600px) {
+  .object-main {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .object-main article.object-article-container {
+    height: 50vh;
+    width: 40vw;
+  }
 }
 
 .back-img {
@@ -684,6 +721,57 @@ main #contact-form > * {
   }
 }
 
+@media screen and (min-width: 600px) {
+  header.header {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 50px;
+  }
+  header.header .header-container .hamburger-container {
+    display: none;
+  }
+  header.header .main-heading {
+    color: white;
+    z-index: 1;
+  }
+  header.header .nav-box {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  header.header .nav-box .nav-text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 40px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -753,9 +841,10 @@ main #contact-form > * {
 .header .header-container .hamburger-container .line1 {
   width: 100%;
   height: 3px;
-  background: black;
+  background: white;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  border-radius: 20px;
 }
 
 .header .header-container .hamburger-container .line1::before, .header .header-container .hamburger-container .line1::after {
@@ -763,9 +852,10 @@ main #contact-form > * {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: black;
+  background: white;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  border-radius: 20px;
 }
 
 .header .header-container .hamburger-container .line1::before {
@@ -787,11 +877,13 @@ main #contact-form > * {
 .header .header-container .hamburger-container.activeBtn .line1::before {
   -webkit-transform: translateY(8.5px) rotate(45deg);
           transform: translateY(8.5px) rotate(45deg);
+  background: black;
 }
 
 .header .header-container .hamburger-container.activeBtn .line1::after {
   -webkit-transform: translateY(-8.5px) rotate(-45deg);
           transform: translateY(-8.5px) rotate(-45deg);
+  background: black;
 }
 
 .header .main-heading {
@@ -851,11 +943,11 @@ main #contact-form > * {
 }
 
 .header .nav-box .nav-text-container ul li a.on-site {
-  color: #949494;
+  color: #3750e0;
 }
 
 .header .nav-box .nav-text-container ul li a:hover {
-  color: #949494;
+  color: #3750e0;
 }
 
 .header .nav-box.active {
@@ -921,7 +1013,7 @@ main form #form-submit-button {
 .footer {
   width: 100%;
   height: 30vh;
-  background: #545454;
+  background: #999898;
   position: relative;
   bottom: 0;
   display: -webkit-box;
@@ -978,6 +1070,7 @@ main form #form-submit-button {
   width: 30px;
   height: 30px;
   background: black;
+  border-radius: 100px;
 }
 
 .footer .footer-nav {
@@ -1019,14 +1112,14 @@ main form #form-submit-button {
 
 .footer .footer-nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .footer .footer-nav ul li a:hover {
-  color: #949494;
+  color: #3750e0;
 }
 
 .footer .footer-nav ul li a.on-site {
-  color: #949494;
+  color: #3750e0;
 }
 /*# sourceMappingURL=style.css.map */
