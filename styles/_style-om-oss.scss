@@ -24,14 +24,31 @@ main {
     .card {
       margin-left: 11%;
       margin-bottom: 10%;
+      position: relative;
       img {
-        width: 100%;
-        height: 200px;
+        width: 180px;
+        height: 220px;
         border-radius: 7px;
       }
 
       img:hover {
         transform: scale(1.07);
+      }
+      .info {
+        width: 100%;
+        height: 220px;
+        display: none;
+        background: black;
+        opacity: 0.5;
+        color: white;
+        position: absolute;
+        border-radius: 7px;
+      }
+      &:hover {
+        .info {
+          display: block;
+          z-index: 1;
+        }
       }
     }
     .all-cards {
@@ -39,5 +56,13 @@ main {
       flex-wrap: wrap;
       margin-top: 10%;
     }
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .mail {
+    font-size: 15px;
   }
 }
