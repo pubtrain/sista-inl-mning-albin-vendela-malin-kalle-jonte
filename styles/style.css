@@ -4,6 +4,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
+.header .header-container {
+  position: relative;
+}
+
 .header .header-container .object-pic {
   width: 100%;
   height: 100%;
@@ -143,7 +147,7 @@
   z-index: 0;
 }
 
-main {
+.om-oss-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +163,7 @@ main {
           align-items: center;
 }
 
-main .history-and-rolls .history {
+.om-oss-main .history-and-rolls .history {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,11 +177,21 @@ main .history-and-rolls .history {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   margin-top: 10%;
   margin-bottom: 15%;
+  padding: 0 40px;
 }
 
-main .rolls {
+.om-oss-main .history-and-rolls .history .info-history {
+  margin-bottom: 20px;
+}
+
+.om-oss-main .history-and-rolls .history h2 {
+  margin-bottom: 20px;
+}
+
+.om-oss-main .rolls {
   font-size: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +208,7 @@ main .rolls {
           align-items: center;
 }
 
+
 main .rolls .card {
   margin-left: 11%;
   margin-bottom: 10%;
@@ -202,8 +217,21 @@ main .rolls .card {
 main .rolls .card img {
   width: 100%;
   height: 200px;
-  border-radius: 7px;
+
+.om-oss-main .rolls .card {
+  margin-bottom: 15%;
+  position: relative;
 }
+
+.om-oss-main .rolls .card img {
+  width: 350px;
+  height: 420px;
+
+  border-radius: 7px;
+  -webkit-box-shadow: black;
+          box-shadow: black;
+}
+
 
 main .rolls .card img:hover {
   -webkit-transform: scale(1.07);
@@ -211,6 +239,31 @@ main .rolls .card img:hover {
 }
 
 main .rolls .all-cards {
+
+.om-oss-main .rolls .card .info {
+  width: 100%;
+  height: 420px;
+  display: none;
+  background: black;
+  opacity: 0.85;
+  color: white;
+  position: absolute;
+  border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.om-oss-main .rolls .card:hover .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.om-oss-main .rolls .all-cards {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,9 +271,9 @@ main .rolls .all-cards {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -232,27 +285,114 @@ main .rolls .all-cards {
 .kalle {
   color: green;
   background: black;
+
+.om-oss-main p {
+  font-size: 15px;
 }
 
-.header .header-container {
-  height: 100%;
+.om-oss-main .mail {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .all-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card {
+    margin-right: 20px;
+  }
+}
+
+.startpage article img {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 800px) {
+  .startpage article img {
+    width: 35%;
+  }
+}
+
+.header .header-container .start-header-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vw;
+  background-image: url(./../images/13480865.jpg);
   background-size: cover;
   background-position: bottom;
-  position: relative;
+
+  position: absolute;
+  z-index: 0;
+}
+
+.start-header {
+  margin-bottom: 50px;
+}
+
+.start-titel {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.stad {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.adress {
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.storlek {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.start-objekt1,
+.start-objekt2,
+.start-objekt3,
+.start-objekt4,
+.start-objekt5,
+.start-objekt6 {
+  width: 80vw;
+}
+
+.startpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.header .main-heading {
+  position: absolute;
+
 }
 
 .header .header-container .reference-img {
@@ -265,6 +405,10 @@ main .rolls .all-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -592,9 +736,136 @@ main #contact-form > * {
   z-index: 2;
 }
 
+.header .header-container .hamburger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 40px;
+  margin: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.header .header-container .hamburger-container .line1 {
+  width: 100%;
+  height: 3px;
+  background: black;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header .header-container .hamburger-container .line1::before, .header .header-container .hamburger-container .line1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: black;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header .header-container .hamburger-container .line1::before {
+  top: 25%;
+}
+
+.header .header-container .hamburger-container .line1::after {
+  bottom: 25%;
+}
+
+.header .header-container .hamburger-container.activeBtn {
+  z-index: 9999;
+}
+
+.header .header-container .hamburger-container.activeBtn .line1 {
+  background: transparent;
+}
+
+.header .header-container .hamburger-container.activeBtn .line1::before {
+  -webkit-transform: translateY(8.5px) rotate(45deg);
+          transform: translateY(8.5px) rotate(45deg);
+}
+
+.header .header-container .hamburger-container.activeBtn .line1::after {
+  -webkit-transform: translateY(-8.5px) rotate(-45deg);
+          transform: translateY(-8.5px) rotate(-45deg);
+}
+
 .header .main-heading {
   color: white;
   z-index: 1;
+}
+
+.header .nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: fixed;
+  background: white;
+  inset: 0 0 0 40%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 5;
+}
+
+.header .nav-box .nav-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 30%;
+  margin: 0 20%;
+}
+
+.header .nav-box .nav-text-container ul li {
+  list-style-type: none;
+}
+
+.header .nav-box .nav-text-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.header .nav-box .nav-text-container ul li a.on-site {
+  color: #949494;
+}
+
+.header .nav-box.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 * {
