@@ -300,8 +300,8 @@ main .mail {
   background-size: cover;
   background-position: bottom;
   position: relative;
-
 }
+
 .header .header-container .reference-img {
   width: 100%;
   height: 100%;
@@ -357,7 +357,6 @@ main .ref-estate {
       -ms-flex-align: center;
           align-items: center;
 }
-
 
 main .ref-estate .ref-wrap {
   display: -webkit-box;
@@ -597,7 +596,7 @@ main #contact-form > * {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 9999;
 }
 
 .header .header-container .hamburger-container .line1 {
