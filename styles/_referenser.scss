@@ -23,7 +23,7 @@ main {
     }
     .ref-estate {
         @include flex(column, center, center);
-        
+    
         .ref-wrap {
         @include flex(row, space-around, center);
         flex-wrap: wrap;
@@ -42,4 +42,3 @@ main {
         }
     }
 }
-
