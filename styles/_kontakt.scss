@@ -11,25 +11,17 @@
       background-position: bottom;
       position: absolute;
       z-index: 0;
-      }
-      
+      } 
   }
 }
 
 main {
   font-family: 'Poppins', sans-serif;
+  margin: auto;
   #contact-form {
-    margin: 4px;
-    
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    // input, select{
-    //   padding:3px;
-    
-    
   }
   #contact-form >*:not(#checkbox, button){
    padding: 3px;
@@ -41,14 +33,45 @@ main {
 }
 
 
-#kontakt-main{
+#contact-main{
   font-family: 'Poppins', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  form {
+  align-items: center;
+  width: 90%;
+
+  #find-us{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     width: 90%;
+    display: inline-block;
+    h2{
+      text-align: center;
+      margin: 20px 0;
+    }
+    div{
+      display: flex;
+      justify-content: space-between;
+    }
+    p{
+      font-size: 14px;
+    }
+    p:first-of-type{
+      width: 45%;
+    }
+    p:last-of-type{
+      text-align: right;
+    }
+    img{
+      width: 100%;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  #contact-form {
+    display: flex;
+    margin: auto;
     
     
     input, select, textarea{
@@ -62,16 +85,12 @@ main {
     }
     input:focus-visible{
       
-      border: 5px solid black;
-      
+      border: 2px solid darkgray;
     }
-   #checkbox{
-     margin:auto;
-   }
  
     #form-submit-button{
       width: 40%;
-      margin: auto;
+      margin-bottom: 30px;
       padding: 12px 0px;
       font-size: 18px;
       border:1px solid rgb(109, 104, 104);;
