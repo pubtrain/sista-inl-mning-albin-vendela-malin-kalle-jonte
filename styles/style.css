@@ -4,37 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header-container {
-  background-image: url(/images/5733853.jpg);
-}
-
-.kalle {
-  color: green;
-  background: black;
-}
-
-.header .header-container {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-
-}
-  .header .header-container .object-pic {
+.header .header-container .object-pic {
   width: 100%;
   height: 100%;
   background-image: url(./../images/albins-bild.jpg);
@@ -230,8 +200,8 @@ main .rolls .card {
 }
 
 main .rolls .card img {
-  width: 100%;
-  height: 200px;
+  width: 180px;
+  height: 220px;
   border-radius: 7px;
 }
 
@@ -257,6 +227,36 @@ main .rolls .all-cards {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 10%;
+}
+
+main p {
+  font-size: 15px;
+}
+
+.kalle {
+  color: green;
+  background: black;
+}
+
+.header .header-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
 }
 
 .header .header-container .reference-img {
@@ -323,7 +323,7 @@ main .rolls .all-cards {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
@@ -338,17 +338,14 @@ main .rolls .all-cards {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -381,13 +378,13 @@ main .rolls .all-cards {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .footer-container {
@@ -414,13 +411,13 @@ main .rolls .all-cards {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25%;
 }
 
@@ -438,13 +435,13 @@ main .rolls .all-cards {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80%;
 }
 
@@ -455,13 +452,13 @@ main .rolls .all-cards {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .footer-nav ul li {
