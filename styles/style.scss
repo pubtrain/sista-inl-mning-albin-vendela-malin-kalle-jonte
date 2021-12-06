@@ -68,16 +68,16 @@
     
         }
         &.activeBtn{
-            z-index: 9999;
-            
-            .line1{  
-                background: transparent;    
+          z-index: 9999;
+          
+          .line1{  
+            background: transparent;    
             &::before{  
-                transform: translateY(8.5px) rotate(45deg);
-               }
-    
+              transform: translateY(8.5px) rotate(45deg);
+            }
+            
             &::after{
-                transform: translateY(-8.5px) rotate(-45deg);                
+              transform: translateY(-8.5px) rotate(-45deg);                
             }
             }
         }
@@ -95,7 +95,7 @@
     inset: 0 0 0 40%;
     transform: translateX(100%);
     transition: all .5s ease;
-    z-index: 10;
+    z-index: 5;
     .nav-text-container{
         @include flex(column, space-around,flex-start);
         height: 30%;
