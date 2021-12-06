@@ -4,37 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header-container {
-  background-image: url(/images/5733853.jpg);
-}
-
-.kalle {
-  color: green;
-  background: black;
-}
-
-.header .header-container {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-
-}
-  .header .header-container .object-pic {
+.header .header-container .object-pic {
   width: 100%;
   height: 100%;
   background-image: url(./../images/albins-bild.jpg);
@@ -259,6 +229,32 @@ main .rolls .all-cards {
   margin-top: 10%;
 }
 
+.kalle {
+  color: green;
+  background: black;
+}
+
+.header .header-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
 .header .header-container .reference-img {
   width: 100%;
   height: 100%;
@@ -346,9 +342,6 @@ main .rolls .all-cards {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
   position: relative;
 }
 
