@@ -7,6 +7,7 @@
       background-size: cover;
       background-position: center;
       z-index: 0;
+<<<<<<< HEAD
       justify-content: center;
       align-items: center;
       position: absolute;
@@ -18,6 +19,13 @@
   width: 100%;
   height: 100vh;
   @include flex(column, center, center);
+=======
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+>>>>>>> bc575f6ce7db47abdd45d7ce97728ab427a9c528
 }
 
 main {

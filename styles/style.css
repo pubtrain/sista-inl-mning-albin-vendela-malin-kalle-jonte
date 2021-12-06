@@ -100,8 +100,6 @@
 
 .object-main .object-article-container .object-card .object-img img {
   width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 .object-main .object-article-container .object-card .object-info {
@@ -380,25 +378,9 @@
   background-size: cover;
   background-position: center;
   z-index: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-}
-
-.main-container {
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -717,7 +699,7 @@ main #contact-form > * {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 9999;
 }
 
 .header .header-container .hamburger-container .line1 {
