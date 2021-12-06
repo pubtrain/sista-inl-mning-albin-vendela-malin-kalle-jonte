@@ -1,8 +1,19 @@
+<<<<<<< HEAD
+.header-ref {
+     
+    background-color: rgb(194, 51, 87);
+    background-image: url(./images/123456.jpeg) ;
+    .ref-h1 {
+        color: aliceblue;
+            width: 100%;
+            height: 100%;
+=======
 .header {
     .header-container {
     .reference-img {
         width: 100%;
         height: 100%;
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
         background-image: url(./../images/123456.jpeg);
         background-size: cover;
         background-position: center;
@@ -11,8 +22,17 @@
         justify-content: center;
         align-items: center;
     }
+<<<<<<< HEAD
+  
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    @include flex(column,center,center);
+=======
     }
 }
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 
 main {
     @include flex(row, center, center);
