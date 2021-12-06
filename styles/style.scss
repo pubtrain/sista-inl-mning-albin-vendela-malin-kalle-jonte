@@ -43,6 +43,52 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+}
+
+
+main{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+    
+    input, select, textarea{
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid rgb(109, 104, 104);
+      margin: 3px 0 10px 0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+    }
+    input:focus-visible{
+      
+      border: 5px solid black;
+      
+    }
+   #checkbox{
+     margin:auto;
+   }
+ 
+    #form-submit-button{
+      width: 40%;
+      margin: auto;
+      padding: 12px 0px;
+      font-size: 18px;
+      border:1px solid rgb(109, 104, 104);;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}    
+    
+
 .footer {
   .footer-container{
     width:100%;

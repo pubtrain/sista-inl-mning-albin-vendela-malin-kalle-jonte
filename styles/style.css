@@ -278,6 +278,14 @@ main .mail {
   background-size: cover;
   background-position: bottom;
   position: relative;
+<<<<<<< HEAD
+}
+
+.header-ref {
+  background-color: #c23357;
+  background-image: url(./images/123456.jpeg);
+=======
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 }
 
 .header .header-container .reference-img {
@@ -336,6 +344,11 @@ main .ref-estate {
           align-items: center;
 }
 
+<<<<<<< HEAD
+.main-container .ref .refpic {
+  width: 100px;
+  height: 100px;
+=======
 main .ref-estate .ref-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +378,7 @@ main .ref-estate .ref-object img {
   height: 200px;
   width: 100%;
   border-radius: 2px;
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 }
 
 .header .header-container .contact-header-pic {
@@ -390,6 +404,10 @@ main .ref-estate .ref-object img {
   z-index: 0;
 }
 
+main {
+  font-family: 'Poppins', sans-serif;
+}
+
 main #contact-form {
   margin: 4px;
   display: -webkit-box;
@@ -408,6 +426,64 @@ main #contact-form > * {
   padding: 3px;
 }
 
+<<<<<<< HEAD
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#kontakt-main {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#kontakt-main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+#kontakt-main form input, #kontakt-main form select, #kontakt-main form textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #6d6868;
+  margin: 3px 0 10px 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#kontakt-main form input:focus-visible {
+  border: 5px solid black;
+}
+
+#kontakt-main form #checkbox {
+  margin: auto;
+}
+
+#kontakt-main form #form-submit-button {
+  width: 40%;
+  margin: auto;
+  padding: 12px 0px;
+  font-size: 18px;
+  border: 1px solid #6d6868;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+=======
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 * {
   margin: 0;
   padding: 0;
@@ -454,6 +530,61 @@ main #contact-form > * {
 .header .main-heading {
   color: white;
   z-index: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+main form input, main form select, main form textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #6d6868;
+  margin: 3px 0 10px 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main form input:focus-visible {
+  border: 5px solid black;
+}
+
+main form #checkbox {
+  margin: auto;
+}
+
+main form #form-submit-button {
+  width: 40%;
+  margin: auto;
+  padding: 12px 0px;
+  font-size: 18px;
+  border: 1px solid #6d6868;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
