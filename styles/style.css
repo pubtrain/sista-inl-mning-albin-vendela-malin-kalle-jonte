@@ -319,11 +319,6 @@
   background-image: url(./../images/13480865.jpg);
   background-size: cover;
   background-position: bottom;
-<<<<<<< HEAD
-  position: relative;
-}
-
-=======
   position: absolute;
   z-index: 0;
 }
@@ -379,7 +374,6 @@
   height: auto;
 }
 
->>>>>>> 0d7fd95af1e298f94f3e8256053f3845eb8fc646
 .header .header-container .reference-img {
   width: 100%;
   height: 100%;
@@ -387,25 +381,9 @@
   background-size: cover;
   background-position: center;
   z-index: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-}
-
-.main-container {
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -735,7 +713,7 @@ main #contact-form > * {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 9999;
 }
 
 .header .header-container .hamburger-container .line1 {
