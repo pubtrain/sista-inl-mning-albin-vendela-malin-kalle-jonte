@@ -761,14 +761,32 @@ main #contact-form > * {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
     height: 40px;
+  }
+  header.header .nav-box .nav-text-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15vw;
+  }
+  header.header .nav-box .nav-text-container ul li a {
+    font-family: sans-serif;
   }
 }
 
@@ -1013,7 +1031,7 @@ main form #form-submit-button {
 .footer {
   width: 100%;
   height: 30vh;
-  background: #999898;
+  background: white;
   position: relative;
   bottom: 0;
   display: -webkit-box;
@@ -1112,7 +1130,7 @@ main form #form-submit-button {
 
 .footer .footer-nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .footer .footer-nav ul li a:hover {

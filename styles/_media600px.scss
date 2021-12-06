@@ -19,13 +19,15 @@
           @include flex(row,space-between,center);
           position: relative;
           .nav-text-container{
-              @include flex(row,space-between,center);
+              @include flex(row,flex-end,center);
               width: 100vw;
               height: 40px;
-          ul{
+              ul{
+              @include flex(row,space-around,center);
+              width: 15vw;
               li{
                   a{
-
+                    font-family: sans-serif;
                   }
               }
           }
