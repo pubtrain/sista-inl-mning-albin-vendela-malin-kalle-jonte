@@ -165,7 +165,7 @@
   z-index: 0;
 }
 
-main {
+.om-oss-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +181,7 @@ main {
           align-items: center;
 }
 
-main .history-and-rolls .history {
+.om-oss-main .history-and-rolls .history {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,11 +195,21 @@ main .history-and-rolls .history {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   margin-top: 10%;
   margin-bottom: 15%;
+  padding: 0 40px;
 }
 
-main .rolls {
+.om-oss-main .history-and-rolls .history .info-history {
+  margin-bottom: 20px;
+}
+
+.om-oss-main .history-and-rolls .history h2 {
+  margin-bottom: 20px;
+}
+
+.om-oss-main .rolls {
   font-size: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,40 +226,43 @@ main .rolls {
           align-items: center;
 }
 
-main .rolls .card {
-  margin-left: 11%;
-  margin-bottom: 10%;
+.om-oss-main .rolls .card {
+  margin-left: 14%;
+  margin-bottom: 15%;
   position: relative;
 }
 
-main .rolls .card img {
-  width: 180px;
-  height: 220px;
+.om-oss-main .rolls .card img {
+  width: 350px;
+  height: 420px;
   border-radius: 7px;
+  -webkit-box-shadow: black;
+          box-shadow: black;
 }
 
-main .rolls .card img:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-
-main .rolls .card .info {
+.om-oss-main .rolls .card .info {
   width: 100%;
-  height: 220px;
+  height: 420px;
   display: none;
   background: black;
-  opacity: 0.5;
+  opacity: 0.85;
   color: white;
   position: absolute;
   border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-main .rolls .card:hover .info {
-  display: block;
+.om-oss-main .rolls .card:hover .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
 }
 
-main .rolls .all-cards {
+.om-oss-main .rolls .all-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,11 +281,11 @@ main .rolls .all-cards {
   margin-top: 10%;
 }
 
-main p {
+.om-oss-main p {
   font-size: 15px;
 }
 
-main .mail {
+.om-oss-main .mail {
   font-size: 15px;
 }
 
@@ -306,6 +319,11 @@ main .mail {
   background-image: url(./../images/13480865.jpg);
   background-size: cover;
   background-position: bottom;
+<<<<<<< HEAD
+  position: relative;
+}
+
+=======
   position: absolute;
   z-index: 0;
 }
@@ -361,6 +379,7 @@ main .mail {
   height: auto;
 }
 
+>>>>>>> 0d7fd95af1e298f94f3e8256053f3845eb8fc646
 .header .header-container .reference-img {
   width: 100%;
   height: 100%;
