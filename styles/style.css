@@ -391,6 +391,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+=======
+>>>>>>> bc575f6ce7db47abdd45d7ce97728ab427a9c528
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -455,48 +462,14 @@ main .ref-estate .ref-wrap {
   margin: 2%;
 }
 
-main .ref-estate .ref-estate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .ref-estate .ref-estate .ref-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 2%;
-}
-
-main .ref-estate .ref-estate .ref-object {
+main .ref-estate .ref-object {
   border: solid black 2px;
   border-radius: 5px;
   background-color: aliceblue;
   margin-bottom: 10%;
 }
 
-main .ref-estate .ref-estate .ref-object img {
+main .ref-estate .ref-object img {
   height: 200px;
   width: 100%;
   border-radius: 2px;
