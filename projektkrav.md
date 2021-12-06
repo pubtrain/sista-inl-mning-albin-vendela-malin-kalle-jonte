@@ -21,15 +21,6 @@ Välja ett av följande ämnen för att hen kontaktar företaget (t.ex med radio
 Fritext.
 En submit-knapp.
 
-Extra sida för Kalle:
-Teckna bolån -
-Header?
-Fin bild på familj med texten Teckna Bolån
-Text om att man kan teckna bolån enkelt
-Länk till bolånssida ELLER formulär??
-Info om bolånssidan
-Footer
-
 Samtliga sidor ska innehålla följande element:
 En navigation till samtliga undersidor. Det ska framgå vilken sida i webbplatsen man befinner sig i.
 En header där det framgår tydligt vilken sida/undersida man befinner sig i.
