@@ -253,15 +253,17 @@ main .rolls .all-cards {
   background-size: cover;
   background-position: bottom;
   position: relative;
+<<<<<<< HEAD
 }
 
 .header-ref {
   background-color: #c23357;
   background-image: url(./images/123456.jpeg);
+=======
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 }
 
-.header-ref .ref-h1 {
-  color: aliceblue;
+.header .header-container .reference-img {
   width: 100%;
   height: 100%;
   background-image: url(./../images/123456.jpeg);
@@ -279,9 +281,29 @@ main .rolls .all-cards {
           align-items: center;
 }
 
-.main-container {
-  width: 100%;
-  height: 100vh;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ref-title {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+}
+
+main .ref-estate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,28 +319,41 @@ main .rolls .all-cards {
           align-items: center;
 }
 
-.main-container .ref {
-  width: 100%;
-  height: 100%;
-  background-color: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+<<<<<<< HEAD
 .main-container .ref .refpic {
   width: 100px;
   height: 100px;
+=======
+main .ref-estate .ref-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+}
+
+main .ref-estate .ref-object {
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 10%;
+}
+
+main .ref-estate .ref-object img {
+  height: 200px;
+  width: 100%;
+  border-radius: 2px;
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 }
 
 .header .header-container .contact-header-pic {
@@ -366,6 +401,7 @@ main #contact-form > * {
   padding: 3px;
 }
 
+<<<<<<< HEAD
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -421,6 +457,8 @@ main #contact-form > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+=======
+>>>>>>> 5a8f3ae55a369a5442fab2739cbf2c174d51f2a2
 * {
   margin: 0;
   padding: 0;
