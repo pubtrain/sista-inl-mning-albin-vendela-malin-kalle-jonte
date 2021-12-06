@@ -165,7 +165,7 @@
   z-index: 0;
 }
 
-main {
+.om-oss-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +181,7 @@ main {
           align-items: center;
 }
 
-main .history-and-rolls .history {
+.om-oss-main .history-and-rolls .history {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,11 +195,21 @@ main .history-and-rolls .history {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   margin-top: 10%;
   margin-bottom: 15%;
+  padding: 0 40px;
 }
 
-main .rolls {
+.om-oss-main .history-and-rolls .history .info-history {
+  margin-bottom: 20px;
+}
+
+.om-oss-main .history-and-rolls .history h2 {
+  margin-bottom: 20px;
+}
+
+.om-oss-main .rolls {
   font-size: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,40 +226,43 @@ main .rolls {
           align-items: center;
 }
 
-main .rolls .card {
-  margin-left: 11%;
-  margin-bottom: 10%;
+.om-oss-main .rolls .card {
+  margin-left: 14%;
+  margin-bottom: 15%;
   position: relative;
 }
 
-main .rolls .card img {
-  width: 180px;
-  height: 220px;
+.om-oss-main .rolls .card img {
+  width: 350px;
+  height: 420px;
   border-radius: 7px;
+  -webkit-box-shadow: black;
+          box-shadow: black;
 }
 
-main .rolls .card img:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-
-main .rolls .card .info {
+.om-oss-main .rolls .card .info {
   width: 100%;
-  height: 220px;
+  height: 420px;
   display: none;
   background: black;
-  opacity: 0.5;
+  opacity: 0.85;
   color: white;
   position: absolute;
   border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-main .rolls .card:hover .info {
-  display: block;
+.om-oss-main .rolls .card:hover .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
 }
 
-main .rolls .all-cards {
+.om-oss-main .rolls .all-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,38 +281,97 @@ main .rolls .all-cards {
   margin-top: 10%;
 }
 
-main p {
+.om-oss-main p {
   font-size: 15px;
 }
 
-main .mail {
+.om-oss-main .mail {
   font-size: 15px;
 }
 
-.kalle {
-  color: green;
-  background: black;
+.startpage article img {
+  width: 100%;
+  height: 300px;
 }
 
-.header .header-container {
-  height: 100%;
+@media (min-width: 800px) {
+  .startpage article img {
+    width: 35%;
+  }
+}
+
+.header .header-container .start-header-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(/images/robert-bye-_4c7erArmdg-unsplash.jpg);
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vw;
+  background-image: url(./../images/13480865.jpg);
   background-size: cover;
   background-position: bottom;
-  position: relative;
+  position: absolute;
+  z-index: 0;
+}
+
+.start-header {
+  margin-bottom: 50px;
+}
+
+.start-titel {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.stad {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.adress {
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.storlek {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.start-objekt1,
+.start-objekt2,
+.start-objekt3,
+.start-objekt4,
+.start-objekt5,
+.start-objekt6 {
+  width: 80vw;
+}
+
+.startpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .header .header-container .reference-img {
@@ -376,14 +448,48 @@ main .ref-estate .ref-wrap {
   margin: 2%;
 }
 
-main .ref-estate .ref-object {
+main .ref-estate .ref-estate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ref-estate .ref-estate .ref-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+}
+
+main .ref-estate .ref-estate .ref-object {
   border: solid black 2px;
   border-radius: 5px;
   background-color: aliceblue;
   margin-bottom: 10%;
 }
 
-main .ref-estate .ref-object img {
+main .ref-estate .ref-estate .ref-object img {
   height: 200px;
   width: 100%;
   border-radius: 2px;
