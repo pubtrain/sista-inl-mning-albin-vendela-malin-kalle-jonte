@@ -294,12 +294,7 @@ main .mail {
   background-size: cover;
   background-position: bottom;
   position: relative;
-}
 
-.header-ref {
-  background-color: #c23357;
-  background-image: url(./images/123456.jpeg);
-}
 
 .header .header-container .reference-img {
   width: 100%;
@@ -357,10 +352,7 @@ main .ref-estate {
           align-items: center;
 }
 
-.main-container .ref .refpic {
-  width: 100px;
-  height: 100px;
-}
+
 main .ref-estate .ref-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,10 +409,10 @@ main .ref-estate .ref-object img {
 
 main {
   font-family: 'Poppins', sans-serif;
+  margin: auto;
 }
 
 main #contact-form {
-  margin: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,17 +434,8 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
-#kontakt-main {
+#contact-main {
   font-family: 'Poppins', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#kontakt-main form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,10 +443,67 @@ main #contact-form > * {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
 }
 
-#kontakt-main form input, #kontakt-main form select, #kontakt-main form textarea {
+#contact-main #find-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  display: inline-block;
+}
+
+#contact-main #find-us h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#contact-main #find-us div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact-main #find-us p {
+  font-size: 14px;
+}
+
+#contact-main #find-us p:first-of-type {
+  width: 45%;
+}
+
+#contact-main #find-us p:last-of-type {
+  text-align: right;
+}
+
+#contact-main #find-us img {
+  width: 100%;
+  margin-top: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact-main #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+#contact-main #contact-form input, #contact-main #contact-form select, #contact-main #contact-form textarea {
   font-size: 16px;
   padding: 10px;
   border-radius: 3px;
@@ -473,17 +513,13 @@ main #contact-form > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#kontakt-main form input:focus-visible {
-  border: 5px solid black;
+#contact-main #contact-form input:focus-visible {
+  border: 2px solid darkgray;
 }
 
-#kontakt-main form #checkbox {
-  margin: auto;
-}
-
-#kontakt-main form #form-submit-button {
+#contact-main #contact-form #form-submit-button {
   width: 40%;
-  margin: auto;
+  margin-bottom: 30px;
   padding: 12px 0px;
   font-size: 18px;
   border: 1px solid #6d6868;
