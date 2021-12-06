@@ -19,27 +19,30 @@
   <main>
 
 
-    <form name="contact-form"> 
-      <label for="name-input">Förnamn:</label><br>
-      <input type="text" id="first-name-input" placeholder="Vendela" required><br>
-      <label for="surname-input">Efternamn:</label><br>
-      <input type="text" id="surname-input" placeholder="Swenson" required><br>
-      <label for="e-mail">Email:</label><br>
-      <input type="text" id="e-mail" placeholder="vendela.swenson@gmail.com" required><br>
+    <form id="contact-form" name="contact-form"> 
+      <label for="name-input">Förnamn:</label>
+      <input type="text" id="first-name-input" placeholder="Vendela" required>
+      <label for="surname-input">Efternamn:</label>
+      <input type="text" id="surname-input" placeholder="Swenson" required>
+      <label for="e-mail">Email:</label>
+      <input type="text" id="e-mail" placeholder="vendela.swenson@gmail.com" required>
 
-      <label for="reason">Vad vill du kontakta oss angående?</label><br>
+      <label for="reason">Vad vill du kontakta oss angående?</label>
       <select id="reason" >
         <option value="" disabled selected hidden>Välj alternativ</option>
         <option value="Köp av produkt/tjänst">Köp av produkt/tjänst</option>
         <option value=" Frågor om företaget"> Frågor om företaget</option>
         <option value="Synpunkter på webbplats">Synpunkter på webbplats</option>
       </select>
-      <br>
-      <label for="form-textarea">Meddelande</label><br>
+      
+      <label for="form-textarea">Meddelande</label>
       <textarea id="form-textarea" name="form-textarea" rows="6" cols="25" placeholder="Skriv ditt meddelande" required></textarea>
-      <br>
-      <input type="checkbox" id="subscribe" value="" checked>
-      <label for="subscribe">Prenumerera på nyhetsbrev</label>
+      
+      <div id="checkbox">
+        <input type="checkbox" id="subscribe" value="" checked>
+        <label for="subscribe">Prenumerera på nyhetsbrev</label>
+      </div>
+      
 
 
       <button type="submit" id="form-submit-button">Skicka</button>
