@@ -2,6 +2,7 @@
 
 .header{
     .header-container{
+        position: relative;
         .object-pic{
             width: 100%;
             height: 100%;
@@ -11,8 +12,10 @@
         position: absolute;
         z-index: 0;
         }
+       
         
     }
+    
 }
 
 .object-main{
@@ -38,10 +41,11 @@
                 position: relative;
                 overflow: hidden;
                 border-radius: 10px 10px 0 0;
+               
                 img{
                     width: 100%;
-
-                    
+                    position:absolute;
+                    top: 0;
                 }
             }
             .object-info{
