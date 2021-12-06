@@ -236,6 +236,8 @@
   width: 350px;
   height: 420px;
   border-radius: 7px;
+  -webkit-box-shadow: black;
+          box-shadow: black;
 }
 
 .om-oss-main .rolls .card .info {
@@ -247,10 +249,16 @@
   color: white;
   position: absolute;
   border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .om-oss-main .rolls .card:hover .info {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
 }
 
