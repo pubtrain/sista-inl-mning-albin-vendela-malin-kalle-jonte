@@ -100,8 +100,6 @@
 
 .object-main .object-article-container .object-card .object-img img {
   width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 .object-main .object-article-container .object-card .object-info {
