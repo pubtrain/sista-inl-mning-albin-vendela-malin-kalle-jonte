@@ -49,6 +49,12 @@
 }
 
 .object-main .object-article-container .object-card {
+  width: 100%;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,24 +68,34 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
-  height: 350px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 15px 0;
-  width: 100%;
 }
 
 .object-main .object-article-container .object-card .object-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
   border-radius: 10px 10px 0 0;
-  background-image: url(/images/test-referensbild.jpg);
-  background-size: cover;
-  background-position: center;
+}
+
+.object-main .object-article-container .object-card .object-img img {
+  width: 100%;
 }
 
 .object-main .object-article-container .object-card .object-info {
@@ -197,17 +213,34 @@ main .rolls {
 main .rolls .card {
   margin-left: 11%;
   margin-bottom: 10%;
+  position: relative;
 }
 
 main .rolls .card img {
-  width: 100%;
-  height: 200px;
+  width: 180px;
+  height: 220px;
   border-radius: 7px;
 }
 
 main .rolls .card img:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
+}
+
+main .rolls .card .info {
+  width: 100%;
+  height: 220px;
+  display: none;
+  background: black;
+  opacity: 0.5;
+  color: white;
+  position: absolute;
+  border-radius: 7px;
+}
+
+main .rolls .card:hover .info {
+  display: block;
+  z-index: 1;
 }
 
 main .rolls .all-cards {
@@ -227,6 +260,14 @@ main .rolls .all-cards {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 10%;
+}
+
+main p {
+  font-size: 15px;
+}
+
+main .mail {
+  font-size: 15px;
 }
 
 .header .header-container {
@@ -307,10 +348,29 @@ main .rolls .all-cards {
           align-items: center;
 }
 
-.main-container .ref {
-  width: 100%;
-  height: 100%;
-  background-color: 0;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ref-title {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+}
+
+main .ref-estate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,9 +386,135 @@ main .rolls .all-cards {
           align-items: center;
 }
 
-.main-container .ref .refpic {
-  width: 100px;
-  height: 100px;
+main .ref-estate .ref-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+}
+
+main .ref-estate .ref-object {
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 10%;
+}
+
+main .ref-estate .ref-object img {
+  height: 200px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.header .header-container .contact-header-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/Betonmast-Stockholm-scaled-1.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  z-index: 0;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+}
+
+main #contact-form {
+  margin: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #contact-form > * {
+  padding: 3px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#kontakt-main {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#kontakt-main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+#kontakt-main form input, #kontakt-main form select, #kontakt-main form textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #6d6868;
+  margin: 3px 0 10px 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#kontakt-main form input:focus-visible {
+  border: 5px solid black;
+}
+
+#kontakt-main form #checkbox {
+  margin: auto;
+}
+
+#kontakt-main form #form-submit-button {
+  width: 40%;
+  margin: auto;
+  padding: 12px 0px;
+  font-size: 18px;
+  border: 1px solid #6d6868;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 * {
@@ -377,6 +563,61 @@ main .rolls .all-cards {
 .header .main-heading {
   color: white;
   z-index: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+main form input, main form select, main form textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #6d6868;
+  margin: 3px 0 10px 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main form input:focus-visible {
+  border: 5px solid black;
+}
+
+main form #checkbox {
+  margin: auto;
+}
+
+main form #form-submit-button {
+  width: 40%;
+  margin: auto;
+  padding: 12px 0px;
+  font-size: 18px;
+  border: 1px solid #6d6868;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
