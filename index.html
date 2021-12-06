@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="/app.js" defer></script>
     <title>STHLM Mäklare</title>
   </head>
   <body>
-    <header></header>
+    <header class="header start-header">
+      <div class="header-container">
+        <h1 class="main-heading">STHLM Mäklare</h1>
+        <div class="dark-opacity"></div>
+        <div class="start-header-pic"></div>
+      </div>
+    </header>
     <main>
-      <h2>Våra senaste objekt</h2>
-      <div class="start-mainwrapper">
+      <div class="startpage">
+        <h2 class="start-titel">Våra senaste objekt</h2>
         <article class="start-objekt1">
           <img
             src="https://cdn.fasad.eu/rimage.php?url=https%3A%2F%2Fimages02.fasad.eu%2F238%2F400300%2F1536157%2Fhighres%2F15413149.jpg&i=1&m=strict&w=1840&h=1380&c=95&u=2"
             alt="Vardagsrum i lägenhet, tema svart/vitt"
             srcset=""
           />
-          <p>Stockholm</p>
-          <p>Östermalm, Engelbrektsgatan 10</p>
-          <p>7 rok, 259 m<sup>2</sup>, 39 975 000 kr</p>
+          <p class="stad">Stockholm</p>
+          <p class="adress">Östermalm, Engelbrektsgatan 10</p>
+          <p class="storlek">7 rok, 259 m<sup>2</sup>, 39 975 000 kr</p>
         </article>
         <article class="start-objekt2">
           <img
@@ -28,9 +35,9 @@
             alt="Matsal i stor lägenhet"
             srcset=""
           />
-          <p>Stockholm</p>
-          <p>Östermalm, Lützengatan 7</p>
-          <p>5 rok, 150 m<sup>2</sup>, 21 000 000 kr</p>
+          <p class="stad">Stockholm</p>
+          <p class="adress">Östermalm, Lützengatan 7</p>
+          <p class="storlek">5 rok, 150 m<sup>2</sup>, 21 000 000 kr</p>
         </article>
         <article class="start-objekt3">
           <img
@@ -38,9 +45,9 @@
             alt="Stor villa utifrån, Vaxholm"
             srcset=""
           />
-          <p>Vaxholm</p>
-          <p>Karlsudd, Vaxholm, Karlsuddsvägen 67</p>
-          <p>7 rok, 386 m<sup>2</sup>, 69 000 000 kr</p>
+          <p class="stad">Vaxholm</p>
+          <p class="adress">Karlsudd, Vaxholm, Karlsuddsvägen 67</p>
+          <p class="storlek">7 rok, 386 m<sup>2</sup>, 69 000 000 kr</p>
         </article>
         <article class="start-objekt4">
           <img
@@ -48,9 +55,9 @@
             alt="Norra tornen, bild utifrån"
             srcset=""
           />
-          <p>Stockholm</p>
-          <p>Vasastan, Torsplan 10, Vån 33</p>
-          <p>5 rok, 200 m<sup>2</sup>, 55 000 000 kr</p>
+          <p class="stad">Stockholm</p>
+          <p class="adress">Vasastan, Torsplan 10, Vån 33</p>
+          <p class="storlek">5 rok, 200 m<sup>2</sup>, 55 000 000 kr</p>
         </article>
         <article class="start-objekt5">
           <img
@@ -58,9 +65,9 @@
             alt="Takterass med panoramafönster samt uteplats mot vattnet"
             srcset=""
           />
-          <p>Stockholm</p>
-          <p>Södermalm, Duvnäsgatan 1</p>
-          <p>6 rok, 237 m<sup>2</sup>,40 000 000</p>
+          <p class="stad">Stockholm</p>
+          <p class="adress">Södermalm, Duvnäsgatan 1</p>
+          <p class="storlek">6 rok, 237 m<sup>2</sup>,40 000 000</p>
         </article>
         <article class="start-objekt6">
           <img
@@ -68,12 +75,38 @@
             alt="Villa vid vattnet fotograferad uppifrån"
             srcset=""
           />
-          <p>Tyresö</p>
-          <p>Gamla Tyresö - Brevik, Breviksnäsvägen</p>
-          <p>12 rok, 515 m<sup>2</sup>, 59 750 000 kr</p>
+          <p class="stad">Tyresö</p>
+          <p class="adress">Gamla Tyresö - Brevik, Breviksnäsvägen</p>
+          <p class="storlek">12 rok, 515 m<sup>2</sup>, 59 750 000 kr</p>
         </article>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="social-media">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Nav länkar:</h4>
+        <ul>
+          <li>
+            <a href="#">Startsida</a>
+          </li>
+          <li>
+            <a href="#">Våra objekt</a>
+          </li>
+          <li>
+            <a href="#">Om oss</a>
+          </li>
+          <li>
+            <a href="#">Referenser</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

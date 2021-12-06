@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
   <title>Kontakt</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <!--brödtext-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -16,23 +20,40 @@
     </div>
   </header>
   
-  <main>
+  <main id="contact-main">
 
+    <article id="find-us">
+      <h2>Hitta Hit</h2>
+      <div>
+        <p>Vårt kontor är beläget vid famla anrika Brantingtorget i Gamla Stan i Stockholm
+        </p>
+        <p>STHLM Mäklare <br>
+          Brantingtorget <br>
+          Västerlånggatan 8 <br>
+          111 29 Stockholm <br>
+          (+46) 08-501337 <br>
+          maklarna@sthml.com
+        </p>
+      </div>
+      <img src="/sista-inl-mning-albin-vendela-malin-kalle-jonte/images/robert-eklund-KBUGjUfOHec-unsplash.jpg" alt="Bild kontorsbyggnad">
+    </article>
 
     <form id="contact-form" name="contact-form"> 
       <label for="name-input">Förnamn:</label>
-      <input type="text" id="first-name-input" placeholder="Vendela" required>
+      <input type="text" id="first-name-input" placeholder="Förnamn" required>
       <label for="surname-input">Efternamn:</label>
-      <input type="text" id="surname-input" placeholder="Swenson" required>
+      <input type="text" id="surname-input" placeholder="Förnamn" required>
       <label for="e-mail">Email:</label>
-      <input type="text" id="e-mail" placeholder="vendela.swenson@gmail.com" required>
+      <input type="text" id="e-mail" placeholder="example@gmail.com" required>
 
-      <label for="reason">Vad vill du kontakta oss angående?</label>
+      <label for="reason">Gällande vad vill du kontakta oss?</label>
       <select id="reason" >
         <option value="" disabled selected hidden>Välj alternativ</option>
         <option value="Köp av produkt/tjänst">Köp av produkt/tjänst</option>
         <option value=" Frågor om företaget"> Frågor om företaget</option>
         <option value="Synpunkter på webbplats">Synpunkter på webbplats</option>
+        <option value="Värdering">Bostadsvärdering</option>
+        <option value="Övrigt">Övrigt</option>
       </select>
       
       <label for="form-textarea">Meddelande</label>
