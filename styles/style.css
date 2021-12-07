@@ -461,13 +461,13 @@ main {
           align-items: center;
 }
 
-main .ref-title {
+main .ref-main .ref-title {
   margin-top: 2%;
   margin-bottom: 5%;
   letter-spacing: 2px;
 }
 
-main .ref-estate {
+main .ref-main .ref-estate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,7 +483,7 @@ main .ref-estate {
           align-items: center;
 }
 
-main .ref-estate .ref-wrap {
+main .ref-main .ref-estate .ref-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,20 +501,20 @@ main .ref-estate .ref-wrap {
   margin: 2%;
 }
 
-main .ref-estate .ref-object {
-  border: solid black 2px;
-  border-radius: 5px;
+main .ref-main .ref-estate .ref-object {
+  border: solid gray 1px;
+  border-radius: 2px;
   background-color: aliceblue;
   margin-bottom: 10%;
 }
 
-main .ref-estate .ref-object img {
+main .ref-main .ref-estate .ref-object img {
   height: 200px;
   width: 100%;
   border-radius: 2px;
 }
 
-main .ref-estate .ref-object .ref-text-containter {
+main .ref-main .ref-estate .ref-object .ref-text-containter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,19 +530,43 @@ main .ref-estate .ref-object .ref-text-containter {
           align-items: center;
 }
 
-main .ref-estate .ref-object .ref-text-containter .ref-object-title {
+main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title {
   padding-left: 10%;
   padding-right: 10%;
   font-size: 1.20rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
+main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
+main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
   font-family: cursive;
+}
+
+@media screen and (min-width: 600px) {
+  .ref-main {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ref-main .ref-object {
+    height: 50vh;
+    width: 40vw;
+  }
 }
 
 .header .header-container .contact-header-pic {
