@@ -5,20 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
-  <script src="/app.js" defer></script>
+  <script src="./app.js" defer></script>
   <title>Document</title>
 </head>
 <body>
   <header class="header">
-    <div class="header-container">
-      <h1 class="main-heading">Våra objekt</h1>
-      <div class="dark-opacity"></div>
-      <div class="object-pic"></div>
-      <div class="hamburger-container">
-        <div class="line1"></div>
-    </div>
-    </div>
-    <div class="nav-box">
+    <nav class="nav-box">
       <div class="nav-text-container">
       <ul>
         <li><a href="./index.html">Hem</a></li>
@@ -35,6 +27,14 @@
       <ul>
         <li><a href="./kontakt.html">Kontakt</a></li>
       </ul>
+    </div>
+    </nav>
+    <div class="header-container">
+      <h1 class="main-heading">Våra objekt</h1>
+      <div class="dark-opacity"></div>
+      <div class="object-pic"></div>
+      <div class="hamburger-container">
+        <div class="line1"></div>
     </div>
     </div>
   </header>
@@ -120,19 +120,21 @@
       <div class="box3"></div>
     </div>
     <nav class="footer-nav">
-      <h4>Nav länkar:</h4>
       <ul>
           <li>
-            <a href="#">hemskärm</a>
+            <a href="/index.html">Hem</a>
           </li>
           <li>
-            <a href="#">hemskärm</a>
+            <a href="/object.html" class="on-site">Våra objekt</a>
           </li>
           <li>
-            <a href="#">hemskärm</a>
+            <a href="/referenser.html">Referenser</a>
           </li>
           <li>
-            <a href="#">hemskärm</a>
+            <a href="/index-om-oss.html">Om oss</a>
+          </li>
+          <li>
+            <a href="/kontakt.html">kontakt</a>
           </li>
       </ul>
     </nav>
