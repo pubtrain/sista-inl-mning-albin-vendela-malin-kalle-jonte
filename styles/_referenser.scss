@@ -40,6 +40,21 @@ main {
             width: 100%;
             border-radius: 2px;
             }
+        .ref-text-containter {
+            @include flex(column, center, center);
+            .ref-object-title {
+                padding-left: 10%;
+                padding-right: 10%;
+                font-size: 1.20rem;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .ref-object-adress {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .ref-object-type {
+                font-family: cursive;
+            }
+        }
         // .ref-object-sold {
         //     transform: rotate(-35deg);
         //     color:rgba(255, 0, 0, 0.541);
