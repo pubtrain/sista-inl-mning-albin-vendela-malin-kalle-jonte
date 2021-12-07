@@ -783,7 +783,7 @@ main #contact-form > * {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 15vw;
+    width: 40vw;
   }
   header.header .nav-box .nav-text-container ul li a {
     font-family: sans-serif;

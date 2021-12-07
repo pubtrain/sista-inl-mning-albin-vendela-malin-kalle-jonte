@@ -24,7 +24,7 @@
               height: 40px;
               ul{
               @include flex(row,space-around,center);
-              width: 15vw;
+              width: 40vw;
               li{
                   a{
                     font-family: sans-serif;
