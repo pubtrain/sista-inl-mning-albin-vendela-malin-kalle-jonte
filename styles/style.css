@@ -833,6 +833,9 @@ main #contact-form > * {
   header.header .nav-box .nav-text-container ul li a {
     font-family: sans-serif;
   }
+  .card {
+    margin: 0 2%;
+  }
 }
 
 * {
