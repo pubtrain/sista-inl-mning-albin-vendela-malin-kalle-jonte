@@ -242,7 +242,7 @@ body {
 }
 
 .om-oss-main .history-and-rolls .history h2 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .om-oss-main .rolls {
@@ -313,7 +313,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .om-oss-main p {
