@@ -10,6 +10,7 @@
 @import "./start";
 @import "./referenser";
 @import "./kontakt";
+@import "./media600px";
 
 * {
   margin: 0;
@@ -44,24 +45,46 @@
       position: absolute;
       right: 0;
       top: 0;
-      z-index: 9999;
-
-      .line1 {
-        width: 100%;
-        height: 3px;
-        background: rgb(0, 0, 0);
-        transition: all 0.5s ease;
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 3px;
-          background: black;
-          transition: all 0.5s ease;
+        z-index: 9999;
+       
+        .line1{
+            width: 100%;
+            height: 3px;
+            background:rgb(255, 255, 255);
+            transition: all .5s ease;
+            border-radius: 20px;
+            &::before, &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: rgb(255, 255, 255);
+                transition: all .5s ease;
+                border-radius: 20px;
+            }
+            &::before{ 
+                top:25%;
+            }
+            &::after{
+                bottom: 25%;
+            }
+    
         }
-        &::before {
-          top: 25%;
+        &.activeBtn{
+          z-index: 9999;
+          
+          .line1{  
+            background: transparent;    
+            &::before{  
+              transform: translateY(8.5px) rotate(45deg);
+              background: black;
+            }
+            
+            &::after{
+              transform: translateY(-8.5px) rotate(-45deg);                
+              background: black;
+            }
+            }
         }
         &::after {
           bottom: 25%;
@@ -94,21 +117,26 @@
     background: rgb(255, 255, 255);
     inset: 0 0 0 40%;
     transform: translateX(100%);
-    transition: all 0.5s ease;
-    z-index: 10;
-    .nav-text-container {
-      @include flex(column, space-around, flex-start);
-      height: 30%;
-      margin: 0 20%;
-      ul {
-        li {
-          list-style-type: none;
-          a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-            &.on-site {
-              color: rgb(148, 148, 148);
+    transition: all .5s ease;
+    z-index: 5;
+    .nav-text-container{
+        @include flex(column, space-around,flex-start);
+        height: 30%;
+        margin: 0 20%;
+        ul{
+          li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                &.on-site{
+                  color: $hover-color;
+                 
+                }
+                &:hover{
+                  color: $hover-color;
+                }
             }
           }
         }
@@ -117,8 +145,6 @@
     &.active {
       transform: translateX(0%);
     }
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -165,21 +191,30 @@ main {
 }
 
 .footer {
+<<<<<<< HEAD
   .footer-container {
     width: 100%;
     @include flex(row, space-around, center);
   }
+=======
+>>>>>>> 88e3193dee76190aece92e4fc1cde072668e43a4
   width: 100%;
   height: 30vh;
-  background: rgb(165, 165, 165);
+  background: rgb(255, 255, 255);
   position: relative;
   bottom: 0;
   @include flex(row, space-around, center);
+
+  .footer-container{
+    height: 50%;
+    width:100%;
+    @include flex(column-reverse, space-around, center);
+  }
   .social-media {
-    width: 20%;
+    width: 50%;
     height: 20%;
     @include flex(row, space-around, center);
-    width: 25%;
+    
 
     .box1,
     .box2,
@@ -187,6 +222,7 @@ main {
       width: 30px;
       height: 30px;
       background: black;
+      border-radius: 100px
     }
   }
 
@@ -195,10 +231,22 @@ main {
     height: 80%;
     ul {
       height: 100%;
-      @include flex(column, space-around, center);
-
+      @include flex(row, space-around, flex-start);
+      width:95vw;
       li {
         list-style-type: none;
+        a{
+          text-decoration: none;
+          color: black;
+          &:hover{
+            color: $hover-color;
+          }
+          &.on-site{
+            color: $hover-color;
+            
+        }
+
+        }
       }
     }
   }
