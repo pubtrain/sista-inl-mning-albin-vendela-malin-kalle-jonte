@@ -207,15 +207,12 @@ main {
     width: 50%;
     height: 20%;
     @include flex(row, space-around, center);
-
-    .box1,
-    .box2,
-    .box3 {
-      width: 30px;
-      height: 30px;
-      background: black;
-      border-radius: 100px;
+     
+    .box {
+      font-size: 40px;
     }
+     
+    
   }
 
   .footer-nav {
