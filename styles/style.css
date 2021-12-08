@@ -913,6 +913,12 @@ main #contact-form > * {
   .card {
     margin: 0 2%;
   }
+  main {
+    padding-top: 3em;
+  }
+  footer {
+    margin-top: 2em;
+  }
 }
 
 * {
