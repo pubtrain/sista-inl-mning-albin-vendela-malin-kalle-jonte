@@ -113,6 +113,8 @@ main {
 
       #find-us{
         width: 50%;
+        margin-right: 40px;
+
         @include flex(column,center,center);
         .textruta{
           width: 50%;
@@ -136,9 +138,7 @@ main {
     #contact-form{
       max-width: 450px;
 
-      
     }
 
-  }
-  
+  } 
 }
