@@ -103,7 +103,7 @@ main {
 @media screen and (min-width: 600px) {
 
   body{
-    
+    background-image: url(/images/test.jpg);
     #contact-main{
       margin: 40px 0;
       display: flex;
@@ -113,6 +113,8 @@ main {
 
       #find-us{
         width: 50%;
+        margin-right: 40px;
+
         @include flex(column,center,center);
         .textruta{
           width: 50%;
@@ -136,9 +138,7 @@ main {
     #contact-form{
       max-width: 450px;
 
-      
     }
 
-  }
-  
+  } 
 }
