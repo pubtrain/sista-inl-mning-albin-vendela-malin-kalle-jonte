@@ -45,6 +45,7 @@
       position: absolute;
       right: 0;
       top: 0;
+<<<<<<< HEAD
       z-index: 9999;
 
       .line1 {
@@ -101,6 +102,9 @@
 
         &::after {
           transform: translateY(-8.5px) rotate(-45deg);
+=======
+
+>>>>>>> 5856a36a83cd2573bfd03bea8f45beaf042b4baf
         }
       }
     }
@@ -111,6 +115,7 @@
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .nav-box {
   @include flex(column, center, flex-start);
   position: fixed;
@@ -135,6 +140,16 @@
           }
           &:hover {
             color: $hover-color;
+=======
+  .nav-box {
+    @include flex(column, center, flex-start);
+    position: fixed;
+    background: rgb(255, 255, 255);
+    inset: 0 0 0 40%;
+    transform: translateX(100%);
+
+            }
+>>>>>>> 5856a36a83cd2573bfd03bea8f45beaf042b4baf
           }
         }
       }

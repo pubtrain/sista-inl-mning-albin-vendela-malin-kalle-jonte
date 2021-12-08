@@ -919,10 +919,13 @@ main #contact-form > * {
 .header .header-container .hamburger-container .line1 {
   width: 100%;
   height: 3px;
+<<<<<<< HEAD
   background: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 20px;
+=======
+>>>>>>> 5856a36a83cd2573bfd03bea8f45beaf042b4baf
 }
 
 .header .header-container .hamburger-container .line1::before,
@@ -931,10 +934,13 @@ main #contact-form > * {
   position: absolute;
   width: 100%;
   height: 3px;
+<<<<<<< HEAD
   background: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 20px;
+=======
+>>>>>>> 5856a36a83cd2573bfd03bea8f45beaf042b4baf
 }
 
 .header .header-container .hamburger-container .line1::before {
@@ -988,10 +994,14 @@ main #contact-form > * {
   background: white;
   inset: 0 0 0 40%;
   -webkit-transform: translateX(100%);
+<<<<<<< HEAD
   transform: translateX(100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   z-index: 10;
+=======
+          transform: translateX(100%);
+>>>>>>> 5856a36a83cd2573bfd03bea8f45beaf042b4baf
 }
 
 .header .nav-box .nav-text-container {
