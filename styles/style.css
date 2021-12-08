@@ -516,9 +516,6 @@ main .ref-main .ref-estate .ref-object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
   height: 350px;
   background: white;
   margin: 15px 0;
@@ -605,6 +602,22 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
   font-family: cursive;
+}
+
+main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 600px) {
