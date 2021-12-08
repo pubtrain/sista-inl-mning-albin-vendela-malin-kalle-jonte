@@ -427,7 +427,6 @@ body {
   height: auto;
 }
 
-<<<<<<< HEAD
 .startpage .start-sektion1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,10 +452,10 @@ body {
 
 article .start-objekt1 {
   display: inline-block;
-=======
+}
+
 .header .main-heading {
   position: absolute;
->>>>>>> 72892cd642628bcfe358b2e49a1d8b51cfab1393
 }
 
 .header .header-container .reference-img {
