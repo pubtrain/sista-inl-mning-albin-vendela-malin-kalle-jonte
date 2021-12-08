@@ -914,10 +914,6 @@ main #contact-form > * {
 .header .header-container .hamburger-container .line1 {
   width: 100%;
   height: 3px;
-  background: white;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  border-radius: 20px;
 }
 
 .header .header-container .hamburger-container .line1::before, .header .header-container .hamburger-container .line1::after {
@@ -925,10 +921,6 @@ main #contact-form > * {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: white;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  border-radius: 20px;
 }
 
 .header .header-container .hamburger-container .line1::before {
@@ -983,9 +975,6 @@ main #contact-form > * {
   inset: 0 0 0 40%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  z-index: 5;
 }
 
 .header .nav-box .nav-text-container {
@@ -1034,7 +1023,7 @@ main #contact-form > * {
 }
 
 main {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1054,7 +1043,9 @@ main form {
   width: 90%;
 }
 
-main form input, main form select, main form textarea {
+main form input,
+main form select,
+main form textarea {
   font-size: 16px;
   padding: 10px;
   border-radius: 3px;
