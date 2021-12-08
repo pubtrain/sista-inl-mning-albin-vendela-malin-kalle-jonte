@@ -776,6 +776,9 @@ main #contact-form > * {
 }
 
 @media screen and (min-width: 600px) {
+  body {
+    background-image: url(/images/test.jpg);
+  }
   body #contact-main {
     margin: 40px 0;
     display: -webkit-box;
@@ -1179,7 +1182,7 @@ main form #form-submit-button {
 .footer {
   width: 100%;
   height: 30vh;
-  background: white;
+  background: #222121;
   position: relative;
   bottom: 0;
   display: -webkit-box;
@@ -1228,6 +1231,7 @@ main form #form-submit-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #f6f7f8;
 }
 
 .footer .social-media .box {
@@ -1272,8 +1276,8 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a {
+  color: white;
   text-decoration: none;
-  color: black;
 }
 
 .footer .footer-nav ul li a:hover {
