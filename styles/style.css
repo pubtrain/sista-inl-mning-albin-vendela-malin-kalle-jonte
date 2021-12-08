@@ -60,6 +60,9 @@ body {
   width: 100%;
   height: 350px;
   border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px 0;
+  position: relative;
   border-radius: 5px 5px 0 0;
   margin: 15px 0;
   position: relative;
@@ -297,6 +300,22 @@ body {
   z-index: 1;
 }
 
+main .rolls .card .info {
+  width: 100%;
+  height: 220px;
+  display: none;
+  background: black;
+  opacity: 0.5;
+  color: white;
+  position: absolute;
+  border-radius: 7px;
+}
+
+main .rolls .card:hover .info {
+  display: block;
+  z-index: 1;
+}
+
 .om-oss-main .rolls .all-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,8 +335,17 @@ body {
   margin-top: 10%;
 }
 
-.om-oss-main p {
+main p {
   font-size: 15px;
+}
+
+main .mail {
+  font-size: 15px;
+}
+
+.kalle {
+  color: green;
+  background: black;
 }
 
 .om-oss-main .mail {
