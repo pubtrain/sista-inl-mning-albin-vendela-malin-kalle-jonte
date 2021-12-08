@@ -316,8 +316,6 @@ main .rolls .card:hover .info {
   z-index: 1;
 }
 
-main .rolls .all-cards {
-}
 .om-oss-main .rolls .all-cards {
   display: -webkit-box;
   display: -ms-flexbox;
