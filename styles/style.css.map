@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": 3,
 =======
   "version": 3,
@@ -19,6 +20,23 @@
   ],
   "names": [],
   "file": "style.css"
+=======
+    "version": 3,
+    
+    "sources": [
+        "style.scss",
+        "_variabler.scss",
+        "_mixins.scss",
+        "_objects.scss",
+        "_style-om-oss.scss",
+        "_start.scss",
+        "_referenser.scss",
+        "_kontakt.scss",
+        "_media600px.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+>>>>>>> 7ec9402d9d0e8b4fc9d0c990c653a27625d0c5d9
 }
 <<<<<<< HEAD
 =======
