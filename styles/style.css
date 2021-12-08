@@ -722,6 +722,7 @@ main #contact-form > * {
   }
   body #contact-main #find-us {
     width: 50%;
+    margin-right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1155,11 +1156,8 @@ main form #form-submit-button {
           align-items: center;
 }
 
-
 .footer .social-media .box {
-  
   font-size: 40px;
-  
 }
 
 .footer .footer-nav {
