@@ -904,6 +904,10 @@ main #contact-form > * {
   }
   header.header .nav-box .nav-text-container ul li a {
     font-family: sans-serif;
+    padding: 10px;
+  }
+  .card {
+    margin: 0 2%;
   }
 }
 
@@ -1098,6 +1102,7 @@ main #contact-form > * {
   text-decoration: none;
   color: black;
   font-size: 15px;
+  padding: 5px;
 }
 
 .nav-box .nav-text-container ul li a.on-site {
@@ -1224,13 +1229,8 @@ main form #form-submit-button {
           align-items: center;
 }
 
-.footer .social-media .box1,
-.footer .social-media .box2,
-.footer .social-media .box3 {
-  width: 30px;
-  height: 30px;
-  background: black;
-  border-radius: 100px;
+.footer .social-media .box {
+  font-size: 40px;
 }
 
 .footer .footer-nav {
