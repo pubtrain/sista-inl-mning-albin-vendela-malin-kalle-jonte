@@ -1,4 +1,7 @@
 .header {
+    .main-heading{
+        position: absolute;
+    }
     .header-container {
     .reference-img {
         width: 100%;
@@ -7,39 +10,76 @@
         background-size: cover;
         background-position: center;
         z-index: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
     }
     }
 }
 
 main {
     @include flex(row, center, center);
-    .ref-title {
-        margin-top: 2%;
-        margin-bottom: 5%;
-        letter-spacing: 2px;
-    }
-    .ref-estate {
-        @include flex(column, center, center);
-        
-        .ref-wrap {
-        @include flex(row, space-around, center);
-        flex-wrap: wrap;
-        margin: 2%;
+    .ref-main{
+
+        .ref-title {
+            margin-top: 2%;
+            margin-bottom: 5%;
+            letter-spacing: 2px;
         }
-        .ref-object {
-        border: solid black 2px;
-        border-radius: 5px;
-        background-color: aliceblue;
-        margin-bottom: 10%;
-        img {
-            height: 200px;
-            width: 100%;
-            border-radius: 2px;
+        .ref-estate {
+            @include flex(column, center, center);
+            
+            .ref-wrap {
+                @include flex(row, space-around, center);
+                flex-wrap: wrap;
+                margin: 2%;
+            }
+            .ref-object {
+                border: solid gray 1px;
+                border-radius: 2px;
+                background-color: aliceblue;
+                margin-bottom: 10%;
+                img {
+                    height: 200px;
+                    width: 100%;
+                    border-radius: 2px;
+                }
+                .ref-text-containter {
+                    @include flex(column, center, center);
+                    .ref-object-title {
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        font-size: 1.20rem;
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    }
+                    .ref-object-adress {
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+                    .ref-object-type {
+                        font-family: cursive;
+                    }
+                }
+                // .ref-object-sold {
+                    //     transform: rotate(-35deg);
+                    //     color:rgba(255, 0, 0, 0.541);
+                    //     position:absolute;
+                    //     padding-left: 105%;
+                    //     padding-bottom: 90%;
+                    //     font-size: 2.0rem;
+                    //     letter-spacing: 10px;
+                    // }
+                }
             }
         }
+        }
+        
+@media screen and (min-width:600px){
+
+    .ref-main {
+        height: 100vh;
+        @include flex(row,space-around,center);
+        flex-wrap: wrap;
+    .ref-object {
+        height: 50vh;
+        width: 40vw;
+    }
     }
 }
-
