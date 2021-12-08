@@ -60,11 +60,9 @@ body {
   width: 100%;
   height: 350px;
   border: 1px solid black;
-<<<<<<< HEAD
   border-radius: 10px;
   margin: 15px 0;
   position: relative;
-=======
   border-radius: 5px 5px 0 0;
   margin: 15px 0;
   position: relative;
@@ -72,7 +70,6 @@ body {
   transition: all .5s ease;
   background: white;
   overflow: hidden;
->>>>>>> 7d0dc36e9eaca678d1ab4f87751104f3db95a241
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,19 +106,12 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-<<<<<<< HEAD
-  border-radius: 10px 10px 0 0;
-=======
   border-radius: 5px 5px 0 0;
->>>>>>> 7d0dc36e9eaca678d1ab4f87751104f3db95a241
 }
 
 .object-main .object-article-container .object-card .object-img img {
   width: 100%;
-<<<<<<< HEAD
-=======
   position: absolute;
->>>>>>> 7d0dc36e9eaca678d1ab4f87751104f3db95a241
 }
 
 .object-main .object-article-container .object-card .object-info {
@@ -275,17 +265,6 @@ body {
           align-items: center;
 }
 
-<<<<<<< HEAD
-main .rolls .card {
-  margin-left: 11%;
-  margin-bottom: 10%;
-  position: relative;
-}
-
-main .rolls .card img {
-  width: 180px;
-  height: 220px;
-=======
 .om-oss-main .rolls .card {
   margin-bottom: 15%;
   position: relative;
@@ -307,7 +286,6 @@ main .rolls .card img {
   opacity: 0.85;
   color: white;
   position: absolute;
->>>>>>> 7d0dc36e9eaca678d1ab4f87751104f3db95a241
   border-radius: 7px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -322,7 +300,6 @@ main .rolls .card img {
   z-index: 1;
 }
 
-<<<<<<< HEAD
 main .rolls .card .info {
   width: 100%;
   height: 220px;
@@ -340,9 +317,8 @@ main .rolls .card:hover .info {
 }
 
 main .rolls .all-cards {
-=======
+}
 .om-oss-main .rolls .all-cards {
->>>>>>> 7d0dc36e9eaca678d1ab4f87751104f3db95a241
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,7 +337,6 @@ main .rolls .all-cards {
   margin-top: 10%;
 }
 
-<<<<<<< HEAD
 main p {
   font-size: 15px;
 }
@@ -373,10 +348,6 @@ main .mail {
 .kalle {
   color: green;
   background: black;
-=======
-.om-oss-main p {
-  font-size: 15px;
->>>>>>> 7d0dc36e9eaca678d1ab4f87751104f3db95a241
 }
 
 .om-oss-main .mail {
