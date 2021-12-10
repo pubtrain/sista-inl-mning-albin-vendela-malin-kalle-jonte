@@ -136,9 +136,11 @@
           padding: 5px;
           &.on-site {
             color: $hover-color;
+            text-decoration: underline;
           }
           &:hover {
             color: $hover-color;
+            text-decoration: underline;
           }
         }
       }
