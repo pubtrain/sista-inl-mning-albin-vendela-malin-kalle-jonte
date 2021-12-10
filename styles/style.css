@@ -1189,10 +1189,12 @@ main #contact-form > * {
 
 .nav-box .nav-text-container ul li a.on-site {
   color: #a1a1a1;
+  text-decoration: underline;
 }
 
 .nav-box .nav-text-container ul li a:hover {
   color: #a1a1a1;
+  text-decoration: underline;
 }
 
 .active {
