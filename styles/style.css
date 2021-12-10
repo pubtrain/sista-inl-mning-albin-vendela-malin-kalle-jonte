@@ -179,6 +179,18 @@ body {
   }
 }
 
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 200;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 200;
+}
+
 .back-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,6 +307,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+  cursor: pointer;
 }
 
 .om-oss-main .rolls .all-cards {
@@ -984,6 +997,7 @@ main #contact-form > * {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header {

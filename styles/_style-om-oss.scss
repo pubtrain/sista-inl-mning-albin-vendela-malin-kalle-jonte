@@ -1,3 +1,15 @@
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 200;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 200;
+}
+
 .back-img {
   @include flex(column, center, center);
   width: 100%;
@@ -58,6 +70,7 @@
         .info {
           display: flex;
           z-index: 1;
+          cursor: pointer;
         }
       }
     }
