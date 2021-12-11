@@ -181,13 +181,13 @@ body {
 
 .title {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-weight: 200;
 }
 
 .subTitle {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-weight: 200;
 }
 
@@ -997,7 +997,6 @@ main #contact-form > * {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -1131,6 +1130,7 @@ main #contact-form > * {
 
 .main-heading {
   color: white;
+  font-family: "Open Sans", sans-serif;
   z-index: 1;
 }
 
