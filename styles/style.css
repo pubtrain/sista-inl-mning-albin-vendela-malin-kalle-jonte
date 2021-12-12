@@ -179,6 +179,18 @@ body {
   }
 }
 
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
 .back-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,7 +254,7 @@ body {
 }
 
 .om-oss-main .history-and-rolls .history h2 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .om-oss-main .rolls {
@@ -295,6 +307,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+  cursor: pointer;
 }
 
 .om-oss-main .rolls .all-cards {
@@ -313,7 +326,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .om-oss-main p {
@@ -561,9 +574,6 @@ main .ref-main .ref-estate .ref-object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
   height: 350px;
   background: white;
   margin: 15px 0;
@@ -650,6 +660,22 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
   font-family: cursive;
+}
+
+main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -1109,6 +1135,7 @@ main #contact-form > * {
 
 .main-heading {
   color: white;
+  font-family: "Open Sans", sans-serif;
   z-index: 1;
 }
 
@@ -1167,10 +1194,12 @@ main #contact-form > * {
 
 .nav-box .nav-text-container ul li a.on-site {
   color: #a1a1a1;
+  text-decoration: underline;
 }
 
 .nav-box .nav-text-container ul li a:hover {
   color: #a1a1a1;
+  text-decoration: underline;
 }
 
 .active {
