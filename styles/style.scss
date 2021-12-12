@@ -108,6 +108,7 @@
 }
 .main-heading {
   color: white;
+  font-family: "Open Sans", sans-serif;
   z-index: 1;
 }
 
@@ -119,7 +120,6 @@
   transform: translateX(100%);
   transition: all 0.5s ease;
   z-index: 5;
-  
 
   .nav-text-container {
     @include flex(column, space-around, flex-start);
@@ -136,9 +136,11 @@
           padding: 5px;
           &.on-site {
             color: $hover-color;
+            text-decoration: underline;
           }
           &:hover {
             color: $hover-color;
+            text-decoration: underline;
           }
         }
       }
@@ -157,14 +159,14 @@ main {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
-  
+
   form {
     display: flex;
     flex-direction: column;
     width: 90%;
-      input,
-      select,
-      textarea{
+    input,
+    select,
+    textarea {
       font-size: 16px;
       padding: 10px;
       border-radius: 3px;
@@ -211,18 +213,16 @@ main {
     height: 20%;
     @include flex(row, space-around, center);
     color: rgb(246, 247, 248);
-     
+
     .box {
       font-size: 40px;
     }
-     
-    
   }
 
   .footer-nav {
     @include flex(column, space-around, center);
     height: 80%;
-    
+
     ul {
       height: 100%;
       @include flex(row, space-around, flex-start);
