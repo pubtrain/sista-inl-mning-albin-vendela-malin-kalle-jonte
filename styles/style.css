@@ -275,6 +275,7 @@ body {
 
 .om-oss-main .history-and-rolls .history .info-history {
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .om-oss-main .history-and-rolls .history h2 {
@@ -372,7 +373,7 @@ body {
   .om-oss-main .history-and-rolls .history {
     margin-top: 0%;
   }
-  .info-history {
+  .om-oss-main .history-and-rolls .history .info-history {
     width: 65%;
   }
   .two {
@@ -1430,9 +1431,5 @@ main form #form-submit-button {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 6px;
   color: #dfdede;
-<<<<<<< HEAD
-  text-decoration: underline;
-=======
->>>>>>> 0dffc9c8e0f8aa92a7d2e1d611a9d188a4cb3da8
 }
 /*# sourceMappingURL=style.css.map */
