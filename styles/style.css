@@ -384,10 +384,39 @@ body {
   height: 300px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .startpage article img {
-    width: 35%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+
+.startpage-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .start-header .header-container {
@@ -407,11 +436,6 @@ body {
   background-position: center;
   position: relative;
   z-index: 0;
-}
-
-.start-titel {
-  text-align: center;
-  margin: 20px 0;
 }
 
 .stad {
@@ -443,22 +467,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .start-objekt1,
   .start-objekt2,
   .start-objekt3,
   .start-objekt4,
   .start-objekt5,
   .start-objekt6 {
-    width: 35vww;
+    display: inline-block;
+    width: 35vw;
   }
 }
 
@@ -482,31 +506,14 @@ body {
   height: auto;
 }
 
-.startpage .start-sektion1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.startpage .start-titel {
   width: 100%;
-  height: 100%;
+  text-align: center;
+  margin: 20px 0;
 }
 
-.startpage .start-sektion1 img {
-  width: 80%;
-  height: 300px;
-}
-
-article .start-objekt1 {
-  display: inline-block;
+.startpage .start-titel .startpage-wrap {
+  width: 100%;
 }
 
 .header .main-heading {
@@ -620,11 +627,12 @@ main .ref-main .ref-estate .ref-object {
   background: white;
   margin: 15px 0;
   border: 1px solid black;
-  border-radius: 5px 5px 0 0;
   position: relative;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main .ref-main .ref-estate .ref-object:hover {
@@ -651,7 +659,6 @@ main .ref-main .ref-estate .ref-object .ref-pic {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  border-radius: 5px 5px 0px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -682,14 +689,14 @@ main .ref-main .ref-estate .ref-object .ref-text-containter {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 20px 5px;
+  text-align: center;
 }
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title {
   padding-left: 10%;
   padding-right: 10%;
   font-size: 1.00rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title:hover {
@@ -697,12 +704,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title:ho
           transform: scale(103%);
 }
 
-main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
-  font-family: cursive;
   font-size: 0.90rem;
 }
 
