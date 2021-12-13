@@ -271,15 +271,15 @@ body {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 15%;
-  padding: 0 40px;
 }
 
 .om-oss-main .history-and-rolls .history .info-history {
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .om-oss-main .history-and-rolls .history h2 {
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
 .om-oss-main .rolls {
@@ -368,9 +368,12 @@ body {
 
 @media screen and (min-width: 600px) {
   .subTitle {
-    margin-top: -50px;
+    margin-top: 0%;
   }
-  .info-history {
+  .om-oss-main .history-and-rolls .history {
+    margin-top: 0%;
+  }
+  .om-oss-main .history-and-rolls .history .info-history {
     width: 65%;
   }
   .two {
@@ -1257,11 +1260,6 @@ main #contact-form > * {
 .active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 main {
