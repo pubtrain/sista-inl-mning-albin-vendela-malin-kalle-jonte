@@ -18,16 +18,9 @@
   box-sizing: border-box;
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
 
-.subTitle {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
+.subTitle, .title {
+  @include default-font
 }
 
 .header {

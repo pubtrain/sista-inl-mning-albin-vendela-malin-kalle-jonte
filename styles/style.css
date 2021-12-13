@@ -1051,13 +1051,7 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
-.subTitle {
+.subTitle, .title {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 200;
