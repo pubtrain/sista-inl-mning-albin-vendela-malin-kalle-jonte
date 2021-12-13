@@ -4,6 +4,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
+.header {
+  margin-bottom: 10%;
+}
+
 .header .header-container {
   position: relative;
 }
@@ -39,7 +43,28 @@ body {
           align-items: center;
 }
 
-.object-main .object-article-container {
+.object-main .object-subtitle {
+  margin-top: 10%;
+}
+
+.object-main .every-object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.object-main .every-object .object-article-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,9 +79,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
+  margin-top: 5%;
 }
 
-.object-main .object-article-container .object-card {
+.object-main .every-object .object-article-container .object-card {
   width: 100%;
   height: 350px;
   border: 1px solid black;
@@ -82,7 +108,7 @@ body {
           align-items: flex-start;
 }
 
-.object-main .object-article-container .object-card .object-img {
+.object-main .every-object .object-article-container .object-card .object-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,12 +132,12 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.object-main .object-article-container .object-card .object-img img {
+.object-main .every-object .object-article-container .object-card .object-img img {
   width: 100%;
   position: absolute;
 }
 
-.object-main .object-article-container .object-card .object-info {
+.object-main .every-object .object-article-container .object-card .object-info {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -133,7 +159,7 @@ body {
   width: 80%;
 }
 
-.object-main .object-article-container .object-card .details {
+.object-main .every-object .object-article-container .object-card .details {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,7 +176,7 @@ body {
           align-items: center;
 }
 
-.object-main .object-article-container .object-card:hover {
+.object-main .every-object .object-article-container .object-card:hover {
   -webkit-transform: scale(103%);
           transform: scale(103%);
 }
@@ -158,6 +184,21 @@ body {
 @media screen and (min-width: 600px) {
   .object-main {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10% 0;
+  }
+  .object-main .every-object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,8 +213,10 @@ body {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3%;
   }
-  .object-main article.object-article-container {
+  .object-main .every-object article.object-article-container {
     height: 50vh;
     width: 40vw;
   }
