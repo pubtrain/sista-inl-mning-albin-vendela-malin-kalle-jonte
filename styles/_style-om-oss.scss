@@ -1,3 +1,15 @@
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
 .back-img {
   @include flex(column, center, center);
   width: 100%;
@@ -23,7 +35,7 @@
       }
 
       h2 {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -58,13 +70,14 @@
         .info {
           display: flex;
           z-index: 1;
+          cursor: pointer;
         }
       }
     }
     .all-cards {
       @include flex(row, center, center);
       flex-wrap: wrap;
-      margin-top: 10%;
+      margin-top: 7%;
     }
   }
 
