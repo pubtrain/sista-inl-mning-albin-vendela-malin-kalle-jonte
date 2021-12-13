@@ -1247,7 +1247,6 @@ main #contact-form > * {
 .nav-box .nav-text-container ul li a.on-site {
   color: #dfdede;
   text-decoration: underline;
-  font-weight: 900;
 }
 
 .nav-box .nav-text-container ul li a:hover {
@@ -1433,5 +1432,7 @@ main form #form-submit-button {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 6px;
+  color: #dfdede;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
