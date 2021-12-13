@@ -622,6 +622,8 @@ main .ref-main .ref-estate .ref-object {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main .ref-main .ref-estate .ref-object:hover {
@@ -680,6 +682,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter {
       -ms-flex: 1;
           flex: 1;
   padding: 5px 20px 20px 20px;
+  text-align: center;
 }
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title {
