@@ -18,12 +18,6 @@
   box-sizing: border-box;
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
 .subTitle {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -48,6 +42,11 @@
     .main-heading {
       color: white;
       z-index: 2;
+      color: white;
+      font-family: "Open Sans", sans-serif, Arial, Helvetica;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 200;
     }
     .hamburger-container {
       @include flex(column, center, center);
@@ -118,11 +117,6 @@
     }
   }
 }
-.main-heading {
-  color: white;
-  font-family: "Open Sans", sans-serif, Arial, Helvetica;
-  z-index: 1;
-}
 
 .nav-box {
   @include flex(column, center, flex-start);
@@ -149,7 +143,7 @@
           &.on-site {
             color: $hover-color;
             text-decoration: underline;
-            font-size: 18px;
+            font-weight: 900;
           }
           &:hover {
             color: $hover-color;
@@ -226,7 +220,7 @@ main {
     color: rgb(246, 247, 248);
     .box {
       font-size: 40px;
-      &:hover{
+      &:hover {
         color: $hover-color;
       }
     }
