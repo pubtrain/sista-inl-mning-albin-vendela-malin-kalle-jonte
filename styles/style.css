@@ -337,6 +337,19 @@ body {
   font-size: 15px;
 }
 
+@media screen and (min-width: 600px) {
+  .subTitle {
+    margin-top: -50px;
+  }
+  .info-history {
+    width: 65%;
+  }
+  .two {
+    margin-bottom: -35px;
+    margin-top: -6%;
+  }
+}
+
 .startpage article img {
   width: 100%;
   height: 300px;
