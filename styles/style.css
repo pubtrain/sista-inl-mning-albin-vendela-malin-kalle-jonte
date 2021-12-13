@@ -1428,18 +1428,10 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a.on-site {
-
   color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 6px;
-
   color: #dfdede;
-  text-decoration: underline;
-<<<<<<< HEAD
-=======
-  text-transform: uppercase;
-
->>>>>>> b57d72b123a69972611bbac4c8f8180dd3261b4c
 }
 /*# sourceMappingURL=style.css.map */
