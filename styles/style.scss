@@ -108,7 +108,7 @@
 }
 .main-heading {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
   z-index: 1;
 }
 
@@ -213,7 +213,6 @@ main {
     height: 20%;
     @include flex(row, space-around, center);
     color: rgb(246, 247, 248);
-
     .box {
       font-size: 40px;
     }

@@ -846,6 +846,8 @@ main #contact-form > * {
   height: 280px;
   width: 100%;
   border: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact-main #contact-form {
@@ -1175,7 +1177,7 @@ main #contact-form > * {
 
 .main-heading {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
   z-index: 1;
 }
 
