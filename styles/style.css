@@ -271,7 +271,6 @@ body {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 15%;
-  padding: 0 40px;
 }
 
 .om-oss-main .history-and-rolls .history .info-history {
@@ -279,7 +278,7 @@ body {
 }
 
 .om-oss-main .history-and-rolls .history h2 {
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
 .om-oss-main .rolls {
@@ -368,7 +367,10 @@ body {
 
 @media screen and (min-width: 600px) {
   .subTitle {
-    margin-top: -50px;
+    margin-top: 0%;
+  }
+  .om-oss-main .history-and-rolls .history {
+    margin-top: 0%;
   }
   .info-history {
     width: 65%;
@@ -1128,12 +1130,6 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
 .subTitle {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -1174,6 +1170,11 @@ main #contact-form > * {
 .header .header-container .main-heading {
   color: white;
   z-index: 2;
+  color: white;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
 }
 
 .header .header-container .hamburger-container {
@@ -1269,12 +1270,6 @@ main #contact-form > * {
           transform: translateY(-8.5px) rotate(-45deg);
 }
 
-.main-heading {
-  color: white;
-  font-family: "Open Sans", sans-serif, Arial, Helvetica;
-  z-index: 1;
-}
-
 .nav-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1331,7 +1326,6 @@ main #contact-form > * {
 .nav-box .nav-text-container ul li a.on-site {
   color: #dfdede;
   text-decoration: underline;
-  font-size: 18px;
 }
 
 .nav-box .nav-text-container ul li a:hover {
@@ -1342,11 +1336,6 @@ main #contact-form > * {
 .active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 main {
@@ -1404,7 +1393,8 @@ main form #form-submit-button {
 .footer {
   width: 100%;
   height: 30vh;
-  background: #a3a3a3;
+  background: -webkit-gradient(linear, left top, right top, from(#7a7a79), color-stop(40%, #5f5f5e), to(#7a7a79));
+  background: linear-gradient(to right, #7a7a79, #5f5f5e 40%, #7a7a79);
   position: relative;
   bottom: 0;
   display: -webkit-box;
@@ -1512,7 +1502,14 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a.on-site {
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 6px;
   color: #dfdede;
+<<<<<<< HEAD
   text-decoration: underline;
+=======
+>>>>>>> 0dffc9c8e0f8aa92a7d2e1d611a9d188a4cb3da8
 }
 /*# sourceMappingURL=style.css.map */

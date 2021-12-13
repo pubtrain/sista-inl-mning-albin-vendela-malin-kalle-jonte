@@ -18,12 +18,6 @@
   box-sizing: border-box;
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
 .subTitle {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -48,6 +42,11 @@
     .main-heading {
       color: white;
       z-index: 2;
+      color: white;
+      font-family: "Open Sans", sans-serif, Arial, Helvetica;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 200;
     }
     .hamburger-container {
       @include flex(column, center, center);
@@ -118,11 +117,6 @@
     }
   }
 }
-.main-heading {
-  color: white;
-  font-family: "Open Sans", sans-serif, Arial, Helvetica;
-  z-index: 1;
-}
 
 .nav-box {
   @include flex(column, center, flex-start);
@@ -149,7 +143,6 @@
           &.on-site {
             color: $hover-color;
             text-decoration: underline;
-            font-size: 18px;
           }
           &:hover {
             color: $hover-color;
@@ -162,10 +155,6 @@
 }
 .active {
   transform: translateX(0%);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 main {
@@ -185,8 +174,7 @@ main {
       border-radius: 3px;
       border: 1px solid rgb(109, 104, 104);
       margin: 3px 0 10px 0;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: $shadow;
     }
     input:focus-visible {
       border: 5px solid black;
@@ -202,8 +190,7 @@ main {
       font-size: 18px;
       border: 1px solid rgb(109, 104, 104);
       border-radius: 3px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: $shadow;
     }
   }
 }
@@ -211,7 +198,7 @@ main {
 .footer {
   width: 100%;
   height: 30vh;
-  background: rgb(163, 163, 163);
+  background: $footer-color;
   position: relative;
   bottom: 0;
   @include flex(row, space-around, center);
@@ -228,7 +215,7 @@ main {
     color: rgb(246, 247, 248);
     .box {
       font-size: 40px;
-      &:hover{
+      &:hover {
         color: $hover-color;
       }
     }
@@ -253,8 +240,12 @@ main {
             text-decoration: underline;
           }
           &.on-site {
+            color: white;
+            box-shadow: $shadow;
+            padding: 6px;
+
             color: $hover-color;
-            text-decoration: underline;
+            
           }
         }
       }
