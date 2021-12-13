@@ -4,10 +4,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header {
-  margin-bottom: 10%;
-}
-
 .header .header-container {
   position: relative;
 }
@@ -61,7 +57,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .object-main .every-object .object-article-container {
@@ -79,7 +75,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
-  margin-top: 5%;
 }
 
 .object-main .every-object .object-article-container .object-card {
@@ -196,7 +191,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10% 0;
   }
   .object-main .every-object {
     display: -webkit-box;
@@ -214,11 +208,13 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    margin-top: 3%;
   }
   .object-main .every-object article.object-article-container {
     height: 50vh;
     width: 40vw;
+  }
+  .object-footer {
+    margin-top: 15%;
   }
 }
 
@@ -805,7 +801,6 @@ main #contact-form > * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
 }
 
 #contact-main #find-us {
