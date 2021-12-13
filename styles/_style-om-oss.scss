@@ -56,9 +56,7 @@
       }
       &:hover {
         .info {
-          display: flex;
-          z-index: 1;
-          cursor: pointer;
+          @include hover(2, pointer);
         }
       }
     }
