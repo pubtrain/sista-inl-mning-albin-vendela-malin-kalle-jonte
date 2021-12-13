@@ -271,7 +271,6 @@ body {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 15%;
-  padding: 0 40px;
 }
 
 .om-oss-main .history-and-rolls .history .info-history {
@@ -279,7 +278,7 @@ body {
 }
 
 .om-oss-main .history-and-rolls .history h2 {
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
 .om-oss-main .rolls {
@@ -368,7 +367,10 @@ body {
 
 @media screen and (min-width: 600px) {
   .subTitle {
-    margin-top: -50px;
+    margin-top: 0%;
+  }
+  .om-oss-main .history-and-rolls .history {
+    margin-top: 0%;
   }
   .info-history {
     width: 65%;
@@ -1259,11 +1261,6 @@ main #contact-form > * {
           transform: translateX(0%);
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 main {
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
@@ -1428,18 +1425,11 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a.on-site {
-
   color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 6px;
-
   color: #dfdede;
   text-decoration: underline;
-<<<<<<< HEAD
-=======
-  text-transform: uppercase;
-
->>>>>>> b57d72b123a69972611bbac4c8f8180dd3261b4c
 }
 /*# sourceMappingURL=style.css.map */
