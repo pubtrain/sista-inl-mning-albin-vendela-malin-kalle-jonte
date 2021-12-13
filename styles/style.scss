@@ -18,6 +18,18 @@
   box-sizing: border-box;
 }
 
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
 .header {
   width: 100%;
   height: 50vh;
@@ -137,6 +149,7 @@
           &.on-site {
             color: $hover-color;
             text-decoration: underline;
+            font-size: 18px;
           }
           &:hover {
             color: $hover-color;
@@ -198,7 +211,7 @@ main {
 .footer {
   width: 100%;
   height: 30vh;
-  background: rgb(34, 33, 33);
+  background: rgb(163, 163, 163);
   position: relative;
   bottom: 0;
   @include flex(row, space-around, center);
@@ -215,6 +228,9 @@ main {
     color: rgb(246, 247, 248);
     .box {
       font-size: 40px;
+      &:hover{
+        color: $hover-color;
+      }
     }
   }
 
@@ -234,9 +250,11 @@ main {
 
           &:hover {
             color: $hover-color;
+            text-decoration: underline;
           }
           &.on-site {
             color: $hover-color;
+            text-decoration: underline;
           }
         }
       }

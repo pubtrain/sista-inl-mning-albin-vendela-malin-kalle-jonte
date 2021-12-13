@@ -81,7 +81,6 @@ body {
   width: 100%;
   height: 350px;
   border: 1px solid black;
-  border-radius: 5px 5px 0 0;
   margin: 15px 0;
   position: relative;
   -webkit-transition: all .5s ease;
@@ -124,7 +123,6 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 5px 5px 0 0;
 }
 
 .object-main .every-object .object-article-container .object-card .object-img img {
@@ -218,18 +216,6 @@ body {
   }
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
-.subTitle {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
 .back-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,7 +300,7 @@ body {
 }
 
 .om-oss-main .rolls .card {
-  margin-bottom: 15%;
+  margin-bottom: 16%;
   position: relative;
 }
 
@@ -322,8 +308,8 @@ body {
   width: 350px;
   height: 420px;
   border-radius: 7px;
-  -webkit-box-shadow: black;
-          box-shadow: black;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .om-oss-main .rolls .card .info {
@@ -368,12 +354,29 @@ body {
   margin-top: 7%;
 }
 
+.om-oss-main .rolls .all-cards .card {
+  margin-bottom: 120px;
+}
+
 .om-oss-main p {
   font-size: 15px;
 }
 
 .om-oss-main .mail {
   font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .subTitle {
+    margin-top: -50px;
+  }
+  .info-history {
+    width: 65%;
+  }
+  .two {
+    margin-bottom: -35px;
+    margin-top: -6%;
+  }
 }
 
 .startpage article img {
@@ -1046,6 +1049,18 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
 .header {
   width: 100%;
   height: 50vh;
@@ -1235,12 +1250,13 @@ main #contact-form > * {
 }
 
 .nav-box .nav-text-container ul li a.on-site {
-  color: #a1a1a1;
+  color: #dfdede;
   text-decoration: underline;
+  font-size: 18px;
 }
 
 .nav-box .nav-text-container ul li a:hover {
-  color: #a1a1a1;
+  color: #dfdede;
   text-decoration: underline;
 }
 
@@ -1309,7 +1325,7 @@ main form #form-submit-button {
 .footer {
   width: 100%;
   height: 30vh;
-  background: #222121;
+  background: #a3a3a3;
   position: relative;
   bottom: 0;
   display: -webkit-box;
@@ -1365,6 +1381,10 @@ main form #form-submit-button {
   font-size: 40px;
 }
 
+.footer .social-media .box:hover {
+  color: #dfdede;
+}
+
 .footer .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1408,10 +1428,12 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a:hover {
-  color: #a1a1a1;
+  color: #dfdede;
+  text-decoration: underline;
 }
 
 .footer .footer-nav ul li a.on-site {
-  color: #a1a1a1;
+  color: #dfdede;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
