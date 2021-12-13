@@ -1051,12 +1051,6 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
-
 .subTitle {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -1097,6 +1091,11 @@ main #contact-form > * {
 .header .header-container .main-heading {
   color: white;
   z-index: 2;
+  color: white;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
 }
 
 .header .header-container .hamburger-container {
@@ -1192,12 +1191,6 @@ main #contact-form > * {
           transform: translateY(-8.5px) rotate(-45deg);
 }
 
-.main-heading {
-  color: white;
-  font-family: "Open Sans", sans-serif, Arial, Helvetica;
-  z-index: 1;
-}
-
 .nav-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1254,7 +1247,7 @@ main #contact-form > * {
 .nav-box .nav-text-container ul li a.on-site {
   color: #dfdede;
   text-decoration: underline;
-  font-size: 18px;
+  font-weight: 900;
 }
 
 .nav-box .nav-text-container ul li a:hover {
@@ -1436,9 +1429,15 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a.on-site {
+
   color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 6px;
+
+  color: #dfdede;
+  text-decoration: underline;
+  text-transform: uppercase;
+
 }
 /*# sourceMappingURL=style.css.map */
