@@ -16,8 +16,10 @@
 }
 
 main {
+  
   margin: auto;
   #contact-form {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,12 +33,8 @@ main {
 
 
 #contact-main{
+  @include flex (column, center, center);
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
 
   #find-us{
     display: flex;
@@ -97,7 +95,7 @@ main {
       font-size: 18px;
       border:1px solid rgb(109, 104, 104);;
       border-radius: 3px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: $shadow;
     }
   }
 }    
