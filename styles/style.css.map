@@ -1,18 +1,16 @@
 {
-    "version": 3,
-
-
-    "sources": [
-        "style.scss",
-        "_variabler.scss",
-        "_mixins.scss",
-        "_objects.scss",
-        "_style-om-oss.scss",
-        "_start.scss",
-        "_referenser.scss",
-        "_kontakt.scss",
-        "_media600px.scss"
-    ],
-    "names": [],
-    "file": "style.css"
+  "version": 3,
+  "sources": [
+    "style.scss",
+    "_variabler.scss",
+    "_mixins.scss",
+    "_objects.scss",
+    "_style-om-oss.scss",
+    "_start.scss",
+    "_referenser.scss",
+    "_kontakt.scss",
+    "_media600px.scss"
+  ],
+  "names": [],
+  "file": "style.css"
 }
