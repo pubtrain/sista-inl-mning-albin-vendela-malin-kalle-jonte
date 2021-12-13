@@ -143,7 +143,6 @@
           &.on-site {
             color: $hover-color;
             text-decoration: underline;
-            font-weight: 900;
           }
           &:hover {
             color: $hover-color;
@@ -245,15 +244,12 @@ main {
             text-decoration: underline;
           }
           &.on-site {
-
             color: white;
             box-shadow: $shadow;
             padding: 6px;
 
             color: $hover-color;
             text-decoration: underline;
-            text-transform: uppercase;
-
           }
         }
       }
