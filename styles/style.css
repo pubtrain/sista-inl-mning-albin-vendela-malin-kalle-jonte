@@ -81,7 +81,6 @@ body {
   width: 100%;
   height: 350px;
   border: 1px solid black;
-  border-radius: 5px 5px 0 0;
   margin: 15px 0;
   position: relative;
   -webkit-transition: all .5s ease;
@@ -124,7 +123,6 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 5px 5px 0 0;
 }
 
 .object-main .every-object .object-article-container .object-card .object-img img {
@@ -333,7 +331,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -629,11 +627,12 @@ main .ref-main .ref-estate .ref-object {
   background: white;
   margin: 15px 0;
   border: 1px solid black;
-  border-radius: 5px 5px 0 0;
   position: relative;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main .ref-main .ref-estate .ref-object:hover {
@@ -660,7 +659,6 @@ main .ref-main .ref-estate .ref-object .ref-pic {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  border-radius: 5px 5px 0px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -691,14 +689,14 @@ main .ref-main .ref-estate .ref-object .ref-text-containter {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 20px 5px;
+  text-align: center;
 }
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title {
   padding-left: 10%;
   padding-right: 10%;
   font-size: 1.00rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title:hover {
@@ -706,12 +704,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title:ho
           transform: scale(103%);
 }
 
-main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
-  font-family: cursive;
   font-size: 0.90rem;
 }
 
@@ -858,6 +851,8 @@ main #contact-form > * {
   height: 280px;
   width: 100%;
   border: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact-main #contact-form {
@@ -1199,7 +1194,7 @@ main #contact-form > * {
 
 .main-heading {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
   z-index: 1;
 }
 
@@ -1386,6 +1381,10 @@ main form #form-submit-button {
 
 .footer .social-media .box {
   font-size: 40px;
+}
+
+.footer .social-media .box:hover {
+  color: #dfdede;
 }
 
 .footer .footer-nav {
