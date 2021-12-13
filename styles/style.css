@@ -280,6 +280,7 @@ body {
 
 .om-oss-main .history-and-rolls .history .info-history {
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .om-oss-main .history-and-rolls .history h2 {
@@ -378,7 +379,7 @@ body {
   .om-oss-main .history-and-rolls .history {
     margin-top: 0%;
   }
-  .info-history {
+  .om-oss-main .history-and-rolls .history .info-history {
     width: 65%;
   }
   .two {
