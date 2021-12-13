@@ -805,7 +805,6 @@ main #contact-form > * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
 }
 
 #contact-main #find-us {
