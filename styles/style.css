@@ -81,7 +81,6 @@ body {
   width: 100%;
   height: 350px;
   border: 1px solid black;
-  border-radius: 5px 5px 0 0;
   margin: 15px 0;
   position: relative;
   -webkit-transition: all .5s ease;
@@ -124,7 +123,6 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 5px 5px 0 0;
 }
 
 .object-main .every-object .object-article-container .object-card .object-img img {
@@ -1379,6 +1377,10 @@ main form #form-submit-button {
 
 .footer .social-media .box {
   font-size: 40px;
+}
+
+.footer .social-media .box:hover {
+  color: #dfdede;
 }
 
 .footer .footer-nav {

@@ -229,6 +229,9 @@ main {
 
     .box {
       font-size: 40px;
+      &:hover{
+        color: $hover-color;
+      }
     }
   }
 
