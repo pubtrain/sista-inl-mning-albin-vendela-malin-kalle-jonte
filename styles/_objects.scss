@@ -1,7 +1,6 @@
 
 
 .header{
-    margin-bottom: 10%;
     .header-container{
         position: relative;
         .object-pic{
@@ -27,12 +26,11 @@ body{
     }
     .every-object{
         @include flex(column,center,center);
-        margin-top: 5%;
+        margin-top: 3%;
     
     .object-article-container{
         @include flex(column,center,center);
         width: 95%;
-        margin-top: 5%;
         .object-card{
             width: 100%;
             height: 350px;
@@ -82,19 +80,15 @@ body{
    .object-main{
        height: 100vh;
         @include flex(column,space-around,center);
-        margin: 10% 0;
         .every-object{
             @include flex(row,space-around,center);
             flex-wrap: wrap;
             width: 100%;
-            margin-top: 3%;
     article.object-article-container{
-
        height: 50vh;
        width: 40vw;
     }
 }
-    
 }
 
 }
