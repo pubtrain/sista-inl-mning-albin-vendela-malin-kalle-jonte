@@ -1320,7 +1320,8 @@ main form #form-submit-button {
 .footer {
   width: 100%;
   height: 30vh;
-  background: #a3a3a3;
+  background: -webkit-gradient(linear, left top, right top, from(#7a7a79), color-stop(40%, #5f5f5e), to(#7a7a79));
+  background: linear-gradient(to right, #7a7a79, #5f5f5e 40%, #7a7a79);
   position: relative;
   bottom: 0;
   display: -webkit-box;
@@ -1428,8 +1429,19 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a.on-site {
+<<<<<<< HEAD
   color: #5e5e5e;
+=======
+
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 6px;
+
+  color: #dfdede;
+>>>>>>> b57d72b123a69972611bbac4c8f8180dd3261b4c
   text-decoration: underline;
   text-transform: uppercase;
+
 }
 /*# sourceMappingURL=style.css.map */
