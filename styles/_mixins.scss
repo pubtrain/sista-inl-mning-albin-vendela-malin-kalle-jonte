@@ -4,3 +4,9 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin hover($index, $cursor) {
+  display: flex;
+  z-index: $index;
+  cursor: $cursor;
+}
