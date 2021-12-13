@@ -1248,13 +1248,13 @@ main #contact-form > * {
 }
 
 .nav-box .nav-text-container ul li a.on-site {
-  color: #dfdede;
+  color: #5e5e5e;
   text-decoration: underline;
   font-size: 18px;
 }
 
 .nav-box .nav-text-container ul li a:hover {
-  color: #dfdede;
+  color: #5e5e5e;
   text-decoration: underline;
 }
 
@@ -1380,7 +1380,7 @@ main form #form-submit-button {
 }
 
 .footer .social-media .box:hover {
-  color: #dfdede;
+  color: #5e5e5e;
 }
 
 .footer .footer-nav {
@@ -1426,12 +1426,12 @@ main form #form-submit-button {
 }
 
 .footer .footer-nav ul li a:hover {
-  color: #dfdede;
+  color: #5e5e5e;
   text-decoration: underline;
 }
 
 .footer .footer-nav ul li a.on-site {
-  color: #dfdede;
+  color: #5e5e5e;
   text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
