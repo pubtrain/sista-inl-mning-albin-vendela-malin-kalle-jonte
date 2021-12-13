@@ -56,7 +56,8 @@ main {
                     position: absolute;
                 }
                 .ref-text-containter {
-                    @include flex(column,space-between,center); 
+                    @include flex(column,space-around,center); 
+                    flex-wrap: wrap;
                     height: 50%;
                     width:95%;
                     flex:1;
@@ -65,7 +66,7 @@ main {
                     .ref-object-title {
                         padding-left: 10%;
                         padding-right: 10%;
-                        font-size: 1.20rem;
+                        font-size: 1.00rem;
                         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                         &:hover {
                             transform: scale(103%);
@@ -77,6 +78,7 @@ main {
                     }
                     .ref-object-type {
                         font-family: cursive;
+                        font-size: 0.90rem;
                     }
                     .ref-rating {
                         @include flex(row,center,center);
