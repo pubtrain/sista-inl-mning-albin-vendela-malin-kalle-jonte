@@ -4,10 +4,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 */
-.header {
-  margin-bottom: 10%;
-}
-
 .header .header-container {
   position: relative;
 }
@@ -61,7 +57,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .object-main .every-object .object-article-container {
@@ -79,7 +75,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
-  margin-top: 5%;
 }
 
 .object-main .every-object .object-article-container .object-card {
@@ -196,7 +191,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10% 0;
   }
   .object-main .every-object {
     display: -webkit-box;
@@ -214,11 +208,13 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    margin-top: 3%;
   }
   .object-main .every-object article.object-article-container {
     height: 50vh;
     width: 40vw;
+  }
+  .object-footer {
+    margin-top: 15%;
   }
 }
 
@@ -671,12 +667,13 @@ main .ref-main .ref-estate .ref-object .ref-text-containter {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 50%;
   width: 95%;
   -webkit-box-flex: 1;
@@ -688,7 +685,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter {
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-title {
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 1.20rem;
+  font-size: 1.00rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -703,6 +700,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-adress {
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-object-type {
   font-family: cursive;
+  font-size: 0.90rem;
 }
 
 main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
