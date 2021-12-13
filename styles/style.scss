@@ -143,7 +143,6 @@
           &.on-site {
             color: $hover-color;
             text-decoration: underline;
-            font-weight: 900;
           }
           &:hover {
             color: $hover-color;
@@ -249,7 +248,6 @@ main {
           &.on-site {
             color: $hover-color;
             text-decoration: underline;
-            text-transform: uppercase;
           }
         }
       }

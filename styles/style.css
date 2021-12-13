@@ -1247,7 +1247,6 @@ main #contact-form > * {
 .nav-box .nav-text-container ul li a.on-site {
   color: #dfdede;
   text-decoration: underline;
-  font-weight: 900;
 }
 
 .nav-box .nav-text-container ul li a:hover {
@@ -1430,6 +1429,5 @@ main form #form-submit-button {
 .footer .footer-nav ul li a.on-site {
   color: #dfdede;
   text-decoration: underline;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
