@@ -37,6 +37,7 @@
             background: white;
             overflow: hidden;
             @include flex(column,center,flex-start); 
+            box-shadow: $shadow;
             .object-img{
                 @include flex(column,center,flex-start); 
                 flex: 2;
@@ -60,6 +61,11 @@
             .details{
                 width: 100%;
                 @include flex(row,space-between,center); 
+            }
+        }
+    }
+}
+}
 
 .object-main {
   height: 100%;
@@ -117,4 +123,20 @@
   }
 }
 @media screen and (min-width: 600px) {
+    .object-main{
+        height: 100vh;
+        @include flex(column,space-around,center);
+        .every-object{
+            @include flex(row,space-around,center);
+            flex-wrap: wrap;
+            width: 100%;
+            article.object-article-container{
+                height: 50vh;
+                width: 40vw;
+            }
+        }
+    }
+    .object-footer{
+        margin-top: 15%;
+    }
 }
