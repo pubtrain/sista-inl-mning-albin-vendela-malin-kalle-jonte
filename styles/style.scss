@@ -18,9 +18,10 @@
   box-sizing: border-box;
 }
 
-.subTitle,
-.title {
-  @include default-font;
+.subTitle{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
 }
 body {
   background: $body-background;
@@ -52,10 +53,12 @@ body {
       font-family: "Open Sans", sans-serif, Arial, Helvetica;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
-      font-weight: bolder;
+      font-weight: 200;
       font-size: 30px;
-      text-shadow: 0 0 20px #000000; 
-      position: absolute
+
+      text-shadow: 0 0 20px #000000;
+      position: absolute;
+
     }
     .hamburger-container {
       @include flex(column, center, center);
@@ -130,8 +133,7 @@ body {
 .nav-box {
   @include flex(column, center, flex-start);
   position: fixed;
-  background: $footer-nav-background;
-  font-family: $footer-nav-font;
+  @include footer-nav;
   inset: 0 0 0 40%;
   transform: translateX(100%);
   transition: all 0.5s ease;
@@ -206,10 +208,9 @@ main {
 }
 
 .footer {
-  font-family: $footer-nav-font;
+@include footer-nav;
   width: 100%;
   height: 30vh;
-  background: $footer-nav-background;
   position: relative;
   bottom: 0;
   @include flex(row, space-around, center);

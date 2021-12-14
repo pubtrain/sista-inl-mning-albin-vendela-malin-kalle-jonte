@@ -48,6 +48,7 @@
         background: white;
         overflow: hidden;
         @include flex(column, center, flex-start);
+        box-shadow: $shadow;
         .object-img {
           @include flex(column, center, flex-start);
           flex: 2;
