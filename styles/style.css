@@ -664,6 +664,10 @@
   width: 100%;
 }
 
+body {
+  height: 100%;
+}
+
 .header .main-heading {
   position: absolute;
 }
@@ -772,6 +776,7 @@ main .ref-main .ref-estate .ref-object {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 350px;
+  width: 100%;
   background: white;
   margin: 15px 0;
   border: 1px solid black;
@@ -786,6 +791,42 @@ main .ref-main .ref-estate .ref-object {
 main .ref-main .ref-estate .ref-object:hover {
   -webkit-transform: scale(103%);
           transform: scale(103%);
+}
+
+main .ref-main .ref-estate .ref-object .ref-info-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  background: black;
+  opacity: 0.85;
+  color: white;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .ref-main .ref-estate .ref-object:hover .ref-info-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  cursor: pointer;
+  visibility: visible;
 }
 
 main .ref-main .ref-estate .ref-object .ref-pic {
@@ -873,8 +914,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
 }
 
 @media screen and (min-width: 600px) {
-  .ref-main {
-    height: 100vh;
+  main .ref-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -890,9 +930,9 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .ref-main .ref-object {
+  main .ref-main .ref-estate .ref-object {
     height: 50vh;
-    width: 40vw;
+    width: 40%;
   }
 }
 
