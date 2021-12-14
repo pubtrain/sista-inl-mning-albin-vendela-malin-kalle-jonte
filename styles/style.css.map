@@ -1,6 +1,8 @@
 {
     "version": 3,
 
+=======
+
     "sources": [
         "style.scss",
         "_variabler.scss",

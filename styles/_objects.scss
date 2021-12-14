@@ -13,7 +13,6 @@
   }
 }
 
-
 .object-main {
   height: 100%;
   @include flex(column, center, center);
@@ -24,6 +23,16 @@
     @include flex(column, center, center);
     margin-top: 3%;
 
+
+.object-main {
+  height: 100%;
+  @include flex(column, center, center);
+  .object-subtitle {
+    margin-top: 10%;
+  }
+  .every-object {
+    @include flex(column, center, center);
+    margin-top: 3%;
 
     .object-article-container {
       @include flex(column, center, center);
@@ -70,20 +79,20 @@
   }
 }
 @media screen and (min-width: 600px) {
-    .object-main{
-        height: 100vh;
-        @include flex(column,space-around,center);
-        .every-object{
-            @include flex(row,space-around,center);
-            flex-wrap: wrap;
-            width: 100%;
-            article.object-article-container{
-                height: 50vh;
-                width: 40vw;
-            }
-        }
+  .object-main {
+    height: 100vh;
+    @include flex(column, space-around, center);
+    .every-object {
+      @include flex(row, space-around, center);
+      flex-wrap: wrap;
+      width: 100%;
+      article.object-article-container {
+        height: 50vh;
+        width: 40vw;
+      }
     }
-    .object-footer{
-        margin-top: 15%;
-    }
+  }
+  .object-footer {
+    margin-top: 15%;
+  }
 }
