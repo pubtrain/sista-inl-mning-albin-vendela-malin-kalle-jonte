@@ -18,11 +18,11 @@
   box-sizing: border-box;
 }
 
-
-.subTitle, .title {
-  @include default-font
+.subTitle,
+.title {
+  @include default-font;
 }
-body{
+body {
   background: $body-background;
 }
 .subTitle {
@@ -54,8 +54,12 @@ body{
       letter-spacing: 0.2rem;
       font-weight: bolder;
       font-size: 30px;
+<<<<<<< HEAD
+      text-shadow: 0 0 20px #000000;
+=======
       text-shadow: 0 0 20px #000000; 
       position: absolute
+>>>>>>> 68b34aad631cfc82f92b080ed7179fe613a142e7
     }
     .hamburger-container {
       @include flex(column, center, center);
@@ -171,7 +175,6 @@ main {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
-  
 
   form {
     display: flex;
@@ -255,7 +258,6 @@ main {
             color: $on-site-color;
             padding: 6px;
             text-decoration: underline;
-            
           }
         }
       }

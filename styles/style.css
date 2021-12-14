@@ -56,118 +56,7 @@
   margin-top: 3%;
 }
 
-.object-main .every-object .object-article-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 95%;
-}
-
-.object-main .every-object .object-article-container .object-card {
-  width: 100%;
-  height: 350px;
-  border: 1px solid black;
-  margin: 15px 0;
-  position: relative;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  background: white;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.object-main .every-object .object-article-container .object-card .object-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.object-main .every-object .object-article-container .object-card .object-img img {
-  width: 100%;
-  position: absolute;
-}
-
-.object-main .every-object .object-article-container .object-card .object-info {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 5px 20px 20px 20px;
-  height: 50%;
-  width: 80%;
-}
-
-.object-main .every-object .object-article-container .object-card .details {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.object-main {
+.object-main .every-object .object-main {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,11 +73,11 @@
           align-items: center;
 }
 
-.object-main .object-subtitle {
+.object-main .every-object .object-main .object-subtitle {
   margin-top: 10%;
 }
 
-.object-main .every-object {
+.object-main .every-object .object-main .every-object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +94,7 @@
   margin-top: 3%;
 }
 
-.object-main .every-object .object-article-container {
+.object-main .every-object .object-main .every-object .object-article-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,12 +111,13 @@
   width: 95%;
 }
 
-.object-main .every-object .object-article-container .object-card {
+.object-main .every-object .object-main .every-object .object-article-container .object-card {
   width: 100%;
   height: 350px;
   border: 1px solid black;
   margin: 15px 0;
   position: relative;
+
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: white;
@@ -509,22 +399,6 @@
 
 .om-oss-main .mail {
   font-size: 15px;
-}
-
-@media screen and (min-width: 600px) {
-  .subTitle {
-    margin-top: 0%;
-  }
-  .om-oss-main .history-and-rolls .history {
-    margin-top: 0%;
-  }
-  .om-oss-main .history-and-rolls .history .info-history {
-    width: 65%;
-  }
-  .two {
-    margin-bottom: -35px;
-    margin-top: -6%;
-  }
 }
 
 .startpage article img {
@@ -1296,7 +1170,8 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
-.subTitle, .title {
+.subTitle,
+.title {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 200;
