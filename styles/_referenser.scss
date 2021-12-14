@@ -111,6 +111,7 @@ main {
 
 main{
     .ref-main {
+        height: 100vh;
         @include flex(row,space-around,center);
         flex-wrap: wrap;
         .ref-estate{

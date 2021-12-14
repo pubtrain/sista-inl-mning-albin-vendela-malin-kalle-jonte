@@ -17,13 +17,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
+body{
+  background: $body-background;
 }
-
 .subTitle {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -48,6 +44,12 @@
     .main-heading {
       color: white;
       z-index: 2;
+      font-family: "Open Sans", sans-serif, Arial, Helvetica;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: bolder;
+      font-size: 30px;
+      text-shadow: 0 0 20px #000000; 
     }
     .hamburger-container {
       @include flex(column, center, center);
@@ -118,16 +120,12 @@
     }
   }
 }
-.main-heading {
-  color: white;
-  font-family: "Open Sans", sans-serif, Arial, Helvetica;
-  z-index: 1;
-}
 
 .nav-box {
   @include flex(column, center, flex-start);
   position: fixed;
-  background: rgb(255, 255, 255);
+  background: $footer-nav-background;
+  font-family: $footer-nav-font;
   inset: 0 0 0 40%;
   transform: translateX(100%);
   transition: all 0.5s ease;
@@ -147,9 +145,8 @@
           font-size: 15px;
           padding: 5px;
           &.on-site {
-            color: $hover-color;
+            color: $on-site-color;
             text-decoration: underline;
-            font-size: 18px;
           }
           &:hover {
             color: $hover-color;
@@ -164,14 +161,11 @@
   transform: translateX(0%);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 main {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
+  
 
   form {
     display: flex;
@@ -185,8 +179,7 @@ main {
       border-radius: 3px;
       border: 1px solid rgb(109, 104, 104);
       margin: 3px 0 10px 0;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: $shadow;
     }
     input:focus-visible {
       border: 5px solid black;
@@ -202,16 +195,16 @@ main {
       font-size: 18px;
       border: 1px solid rgb(109, 104, 104);
       border-radius: 3px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: $shadow;
     }
   }
 }
 
 .footer {
+  font-family: $footer-nav-font;
   width: 100%;
   height: 30vh;
-  background: rgb(163, 163, 163);
+  background: $footer-nav-background;
   position: relative;
   bottom: 0;
   @include flex(row, space-around, center);
@@ -225,10 +218,10 @@ main {
     width: 50%;
     height: 20%;
     @include flex(row, space-around, center);
-    color: rgb(246, 247, 248);
+    color: $media-icon-color;
     .box {
       font-size: 40px;
-      &:hover{
+      &:hover {
         color: $hover-color;
       }
     }
@@ -245,7 +238,7 @@ main {
       li {
         list-style-type: none;
         a {
-          color: white;
+          color: rgb(0, 0, 0);
           text-decoration: none;
 
           &:hover {
@@ -253,8 +246,10 @@ main {
             text-decoration: underline;
           }
           &.on-site {
-            color: $hover-color;
+            color: $on-site-color;
+            padding: 6px;
             text-decoration: underline;
+            
           }
         }
       }
