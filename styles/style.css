@@ -56,7 +56,7 @@
   margin-top: 3%;
 }
 
-.object-main .every-object .object-main {
+.object-main {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,11 +73,11 @@
           align-items: center;
 }
 
-.object-main .every-object .object-main .object-subtitle {
+.object-main .object-subtitle {
   margin-top: 10%;
 }
 
-.object-main .every-object .object-main .every-object {
+.object-main .every-object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@
   margin-top: 3%;
 }
 
-.object-main .every-object .object-main .every-object .object-article-container {
+.object-main .every-object .object-article-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,13 +111,12 @@
   width: 95%;
 }
 
-.object-main .every-object .object-main .every-object .object-article-container .object-card {
+.object-main .every-object .object-article-container .object-card {
   width: 100%;
   height: 350px;
   border: 1px solid black;
   margin: 15px 0;
   position: relative;
-
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: white;
@@ -789,6 +788,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
 
 @media screen and (min-width: 600px) {
   main .ref-main {
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
