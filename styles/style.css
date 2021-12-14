@@ -1309,6 +1309,7 @@ body {
   font-weight: bolder;
   font-size: 30px;
   text-shadow: 0 0 20px #000000;
+  position: absolute;
 }
 
 .header .header-container .hamburger-container {
