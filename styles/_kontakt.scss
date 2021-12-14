@@ -132,7 +132,7 @@ main {
         }
         #map{
           height: 370px;
-          max-width: 450px;
+          min-width: 100%;
         
           iframe{
             height: 350px;
