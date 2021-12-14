@@ -15,9 +15,7 @@
     }
   
 }
-body{
-    background: rgba(252, 213, 142, 0.253);
-}
+
 .object-main{
     height: 100%;
     @include flex(column,center,center);
