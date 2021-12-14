@@ -407,7 +407,7 @@
   height: 300px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .startpage article img {
     width: 100%;
     display: -webkit-box;
@@ -522,7 +522,7 @@
           align-items: center;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .start-objekt {
     display: inline-block;
     width: 35vw;
@@ -628,11 +628,7 @@
           transform: scale(103%);
 }
 
-h1.start-title {
-  font-size: 48px;
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .start-sektion {
     width: 100%;
     display: -webkit-box;
