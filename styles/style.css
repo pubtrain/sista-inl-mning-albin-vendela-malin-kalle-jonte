@@ -793,7 +793,6 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
 
 @media screen and (min-width: 600px) {
   main .ref-main {
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1225,7 +1224,7 @@ body {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-weight: bolder;
+  font-weight: 200;
   font-size: 30px;
   text-shadow: 0 0 20px #000000;
   position: absolute;
