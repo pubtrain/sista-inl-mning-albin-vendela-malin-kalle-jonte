@@ -22,6 +22,8 @@
   .every-object {
     @include flex(column, center, center);
     margin-top: 3%;
+  }
+}
 
 
 .object-main {
