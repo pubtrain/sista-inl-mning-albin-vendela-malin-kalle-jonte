@@ -1,3 +1,6 @@
+body{
+    height: 100%;
+}
 .header {
     .main-heading{
         position: absolute;
@@ -31,6 +34,7 @@ main {
             .ref-object {
                 @include flex(column,center,flex-start);
                 height: 350px;
+                width: 100%;
                 background: white;
                 margin:15px 0;
                 border: 1px solid black;
@@ -40,6 +44,26 @@ main {
                 box-shadow: $shadow;
                 &:hover {
                     transform: scale(103%);
+                }
+                .ref-info-hover {
+                    @include flex(column,center,flex-start);
+                    height: 100%;
+                    width: 100%;
+                    visibility: hidden;
+                    background: black;
+                    opacity: 0.85;
+                    color: white;
+                    position: absolute;
+                    align-items: center;
+                    text-align: center;
+                    padding: 15%;
+                    font-size: 1.20rem;
+                }
+                &:hover {
+                    .ref-info-hover {
+                        @include hover(2, pointer);
+                        visibility: visible;
+                    }
                 }
                 .ref-pic{
                     @include flex(column,center,flex-start); 
@@ -55,7 +79,7 @@ main {
                     position: absolute;
                 }
                 .ref-text-containter {
-                    @include flex(column,space-around,center); 
+                    @include flex(column,center,center); 
                     flex-wrap: wrap;
                     height: 50%;
                     width:95%;
@@ -80,15 +104,6 @@ main {
                         @include flex(row,center,center);
                     }
                 }
-                // .ref-object-sold {
-                    //     transform: rotate(-35deg);
-                    //     color:rgba(255, 0, 0, 0.541);
-                    //     position:absolute;
-                    //     padding-left: 105%;
-                    //     padding-bottom: 90%;
-                    //     font-size: 2.0rem;
-                    //     letter-spacing: 10px;
-                    // }
                 }
             }
         }
@@ -96,13 +111,17 @@ main {
         
 @media screen and (min-width:600px){
 
+main{
     .ref-main {
-        height: 100vh;
         @include flex(row,space-around,center);
         flex-wrap: wrap;
-    .ref-object {
+        .ref-estate{
+
+            .ref-object {
         height: 50vh;
-        width: 40vw;
+        width: 40%;
     }
     }
+    }
+}
 }

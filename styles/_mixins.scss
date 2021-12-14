@@ -10,3 +10,8 @@
   z-index: $index;
   cursor: $cursor;
 }
+
+@mixin footer-nav{
+  background: $footer-nav-background;
+  font-family: $footer-nav-font;
+  }
