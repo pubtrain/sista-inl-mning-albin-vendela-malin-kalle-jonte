@@ -1,94 +1,73 @@
+.header {
+  .header-container {
+    position: relative;
+    .object-pic {
+      width: 100%;
+      height: 100%;
+      background-image: url(./../images/albins-bild.jpg);
+      background-size: cover;
+      background-position: bottom;
+      position: absolute;
+      z-index: 0;
+    }
+  }
+}
+body {
+  background: rgba(252, 213, 142, 0.253);
+}
+.object-main {
+  height: 100%;
+  @include flex(column, center, center);
+  .object-subtitle {
+    margin-top: 10%;
+  }
+  .every-object {
+    @include flex(column, center, center);
+    margin-top: 3%;
 
-
-.header{
-    .header-container{
+    .object-article-container {
+      @include flex(column, center, center);
+      width: 95%;
+      .object-card {
+        width: 100%;
+        height: 350px;
+        border: 1px solid black;
+        margin: 15px 0;
         position: relative;
-        .object-pic{
-            width: 100%;
-            height: 100%;
-        background-image: url(./../images/albins-bild.jpg);
-        background-size: cover;
-        background-position: bottom;
-        position: absolute;
-        z-index: 0;
-        } 
-    }
-  
-}
-body{
-    background: rgba(252, 213, 142, 0.253);
-}
-.object-main{
-    height: 100%;
-    @include flex(column,center,center);
-    .object-subtitle{
-        margin-top: 10%;
-    }
-    .every-object{
-        @include flex(column,center,center);
-        margin-top: 3%;
-    
-    .object-article-container{
-        @include flex(column,center,center);
-        width: 95%;
-        .object-card{
-            width: 100%;
-            height: 350px;
-            border: 1px solid black;
-            margin:15px 0;
-            position: relative;
-            transition: all .5s ease;
-            background: white;
-            overflow: hidden;
-            @include flex(column,center,flex-start); 
-            .object-img{
-                @include flex(column,center,flex-start); 
-                flex: 2;
-                width: 100%;
-                height: 100%;
-                position: relative;
-                overflow: hidden;
-               
-                img{
-                    width: 100%;
-                    position: absolute;
-                }
-            }
-            .object-info{
-                flex:1;
-                @include flex(column,space-between,flex-start); 
-                padding: 5px 20px 20px 20px;
-                height: 50%;
-                width:80%;
-            }
-            .details{
-                width: 100%;
-                @include flex(row,space-between,center); 
+        transition: all 0.5s ease;
+        background: white;
+        overflow: hidden;
+        @include flex(column, center, flex-start);
+        .object-img {
+          @include flex(column, center, flex-start);
+          flex: 2;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          overflow: hidden;
 
-            }
-            &:hover{
-                transform: scale(103%);
-            }
-        }
-    }
-}
-}
-@media screen and (min-width:600px){
-   
-   .object-main{
-       height: 100vh;
-        @include flex(column,space-around,center);
-        .every-object{
-            @include flex(row,space-around,center);
-            flex-wrap: wrap;
+          img {
             width: 100%;
-    article.object-article-container{
-       height: 50vh;
-       width: 40vw;
+            position: absolute;
+          }
+        }
+        .object-info {
+          flex: 1;
+          @include flex(column, space-between, flex-start);
+          padding: 5px 20px 20px 20px;
+          height: 50%;
+          width: 80%;
+        }
+        .details {
+          width: 100%;
+          @include flex(row, space-between, center);
+        }
+        &:hover {
+          transform: scale(103%);
+        }
+      }
     }
+  }
 }
-}
-.object-footer{
-    margin-top: 15%;
-}
+@media screen and (min-width: 600px) {
 }
