@@ -43,26 +43,20 @@
     text-align: center;
     margin: 20px 0;
     .startpage-wrap {
-      width: 100%;
+      width: 80%;
+      @include flex(column, center, center);
     }
   }
 }
 
 //Här e det som ska in men vet inte var
 
-// .sektion1,
-// .sektion2,
-// .sektion3 {
-//   @include flex(row, space-around, center);
-//   width: 100%;
-// }
-
 // Här e det som sektionerna ska in i, de funkar i mobil men inte resten
 
 .start-objekt {
   height: 100%;
   width: 80vw;
-  @include flex(column, space-around, center);
+  @include flex(row, center, center);
   @media screen and (min-width: 700px) {
     display: inline-block;
     width: 35vw;
@@ -77,6 +71,7 @@
     background: white;
     overflow: hidden;
     @include flex(column, center, flex-start);
+    box-shadow: $shadow;
     .start-img {
       @include flex(column, center, flex-start);
       flex: 2;
@@ -108,4 +103,14 @@
 
 h1.start-title {
   font-size: 48px;
+}
+// .start-sektion {
+//   width: 100%;
+// }
+
+@media screen and (min-width: 700px) {
+  .start-sektion {
+    width: 100%;
+    @include flex(row, space-around, center);
+  }
 }
