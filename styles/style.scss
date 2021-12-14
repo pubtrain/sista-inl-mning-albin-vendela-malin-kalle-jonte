@@ -22,6 +22,14 @@
 .subTitle, .title {
   @include default-font
 }
+body{
+  background: $body-background;
+}
+.subTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
 
 .header {
   width: 100%;
@@ -41,11 +49,12 @@
     .main-heading {
       color: white;
       z-index: 2;
-      color: white;
       font-family: "Open Sans", sans-serif, Arial, Helvetica;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
-      font-weight: 200;
+      font-weight: bolder;
+      font-size: 30px;
+      text-shadow: 0 0 20px #000000; 
     }
     .hamburger-container {
       @include flex(column, center, center);
@@ -120,7 +129,8 @@
 .nav-box {
   @include flex(column, center, flex-start);
   position: fixed;
-  background: rgb(255, 255, 255);
+  background: $footer-nav-background;
+  font-family: $footer-nav-font;
   inset: 0 0 0 40%;
   transform: translateX(100%);
   transition: all 0.5s ease;
@@ -140,7 +150,7 @@
           font-size: 15px;
           padding: 5px;
           &.on-site {
-            color: $hover-color;
+            color: $on-site-color;
             text-decoration: underline;
           }
           &:hover {
@@ -160,6 +170,7 @@ main {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
+  
 
   form {
     display: flex;
@@ -195,9 +206,10 @@ main {
 }
 
 .footer {
+  font-family: $footer-nav-font;
   width: 100%;
   height: 30vh;
-  background: $footer-color;
+  background: $footer-nav-background;
   position: relative;
   bottom: 0;
   @include flex(row, space-around, center);
@@ -211,7 +223,7 @@ main {
     width: 50%;
     height: 20%;
     @include flex(row, space-around, center);
-    color: rgb(246, 247, 248);
+    color: $media-icon-color;
     .box {
       font-size: 40px;
       &:hover {
@@ -231,7 +243,7 @@ main {
       li {
         list-style-type: none;
         a {
-          color: white;
+          color: rgb(0, 0, 0);
           text-decoration: none;
 
           &:hover {
@@ -239,11 +251,9 @@ main {
             text-decoration: underline;
           }
           &.on-site {
-            color: white;
-            box-shadow: $shadow;
+            color: $on-site-color;
             padding: 6px;
-
-            color: $hover-color;
+            text-decoration: underline;
             
           }
         }
