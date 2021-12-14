@@ -54,7 +54,12 @@ body {
       letter-spacing: 0.2rem;
       font-weight: bolder;
       font-size: 30px;
+<<<<<<< HEAD
       text-shadow: 0 0 20px #000000;
+=======
+      text-shadow: 0 0 20px #000000; 
+      position: absolute
+>>>>>>> 68b34aad631cfc82f92b080ed7179fe613a142e7
     }
     .hamburger-container {
       @include flex(column, center, center);
