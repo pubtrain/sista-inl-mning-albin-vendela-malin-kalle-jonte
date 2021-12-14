@@ -11,8 +11,7 @@
   cursor: $cursor;
 }
 
-@mixin default-font {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 200;
-}
+@mixin footer-nav{
+  background: $footer-nav-background;
+  font-family: $footer-nav-font;
+  }

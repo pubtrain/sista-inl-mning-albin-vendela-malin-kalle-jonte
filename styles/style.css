@@ -56,7 +56,7 @@
   margin-top: 3%;
 }
 
-.object-main .every-object .object-main {
+.object-main {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,11 +73,11 @@
           align-items: center;
 }
 
-.object-main .every-object .object-main .object-subtitle {
+.object-main .object-subtitle {
   margin-top: 10%;
 }
 
-.object-main .every-object .object-main .every-object {
+.object-main .every-object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@
   margin-top: 3%;
 }
 
-.object-main .every-object .object-main .every-object .object-article-container {
+.object-main .every-object .object-article-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,13 +111,12 @@
   width: 95%;
 }
 
-.object-main .every-object .object-main .every-object .object-article-container .object-card {
+.object-main .every-object .object-article-container .object-card {
   width: 100%;
   height: 350px;
   border: 1px solid black;
   margin: 15px 0;
   position: relative;
-
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: white;
@@ -135,6 +134,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .object-main .every-object .object-article-container .object-card .object-img {
@@ -792,6 +793,7 @@ main .ref-main .ref-estate .ref-object .ref-text-containter .ref-rating {
 
 @media screen and (min-width: 600px) {
   main .ref-main {
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1170,8 +1172,7 @@ main #contact-form > * {
           box-sizing: border-box;
 }
 
-.subTitle,
-.title {
+.subTitle {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 200;
@@ -1445,10 +1446,10 @@ main form #form-submit-button {
 }
 
 .footer {
+  background: #e6e4e4;
   font-family: sans-serif, Arial, Helvetica;
   width: 100%;
   height: 30vh;
-  background: #e6e4e4;
   position: relative;
   bottom: 0;
   display: -webkit-box;
