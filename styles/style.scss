@@ -17,7 +17,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 body {
+=======
+
+
+.subTitle, .title {
+  @include default-font
+}
+body{
+>>>>>>> 949efbe21adab5751e82a2fb71f40cc2bcdc40fd
   background: $body-background;
 }
 .subTitle {
