@@ -980,6 +980,8 @@ main #contact-form > * {
   header.header .main-heading {
     color: white;
     z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
   }
   header.header .nav-box {
     left: 0;
@@ -1430,6 +1432,6 @@ main form #form-submit-button {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 6px;
-  color: #dfdede;
+  color: #5e5e5e;
 }
 /*# sourceMappingURL=style.css.map */
