@@ -693,6 +693,8 @@ main .ref-main .ref-estate .ref-object .ref-info-hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 15%;
+  font-size: 1.20rem;
 }
 
 main .ref-main .ref-estate .ref-object:hover .ref-info-hover {
@@ -741,8 +743,9 @@ main .ref-main .ref-estate .ref-object .ref-text-containter {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
